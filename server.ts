@@ -9,7 +9,6 @@ import { GoogleGenAI } from '@google/genai';
 import dotenv from 'dotenv';
 import pg from 'pg';
 import { createClient as createSupabaseClient } from '@supabase/supabase-js';
-import { DEMO_ANALYSIS, DEMO_RESUME, DEMO_USER } from './src/data/demoData.ts';
 
 dotenv.config();
 
@@ -56,24 +55,9 @@ interface DatabaseSchema {
 }
 
 let db: DatabaseSchema = {
-  users: [
-    {
-      id: DEMO_USER.id,
-      name: DEMO_USER.name,
-      email: DEMO_USER.email,
-      passwordHash: bcrypt.hashSync('demo12345', 10),
-      targetRole: DEMO_USER.targetRole,
-      preferredIndustry: DEMO_USER.preferredIndustry,
-      createdAt: DEMO_USER.createdAt,
-      preferences: DEMO_USER.preferences || {
-        emailNotifications: true,
-        analysisNotifications: true,
-        theme: 'light',
-      },
-    },
-  ],
-  resumes: [DEMO_RESUME],
-  analyses: [DEMO_ANALYSIS],
+  users: [],
+  resumes: [],
+  analyses: [],
 };
 
 // Load existing DB if present
@@ -406,10 +390,10 @@ async function ensureUserExistsInSupabase(userId: string) {
     if (!existingUser) {
       await supabaseServer.from('users').upsert({
         id: userId,
-        name: 'Alex Morgan',
+        name: 'ResumeAI User',
         email: `${userId.replace(/[^a-zA-Z0-9]/g, '_')}@example.com`,
-        password_hash: '$2b$10$demoUserPasswordHashPlaceholder',
-        target_role: 'Senior Backend Engineer',
+        password_hash: '$2b$10$userPasswordHashPlaceholder',
+        target_role: 'Software Engineer',
         preferred_industry: 'Technology',
         preferences: { emailNotifications: true, analysisNotifications: true, theme: 'light' },
       });
@@ -742,7 +726,7 @@ function parseResumeSections(text: string) {
   const skills: string[] = [];
   const knownSkills = [
     'Python', 'FastAPI', 'Django', 'Flask', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis',
-    'Docker', 'Kubernetes', 'AWS', 'GCP', 'Azure', 'Linux', 'Git', 'CI/CD', 'GitHub Actions',
+    'Docker', 'Kubernetes', 'Cloud Infrastructure', 'GCP', 'Azure', 'Linux', 'Git', 'CI/CD', 'GitHub Actions',
     'TypeScript', 'JavaScript', 'React', 'Node.js', 'Next.js', 'Tailwind CSS', 'GraphQL',
     'REST APIs', 'Microservices', 'PyTorch', 'TensorFlow', 'LLM', 'Celery', 'System Design'
   ];
@@ -936,7 +920,7 @@ function extractJobTitle(text: string): string {
 
 function generateSemanticAnalysis(resumeText: string, jobDescription: string, resumeFileName: string, userId: string) {
   const commonTech = [
-    'Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Kubernetes', 'Redis', 'AWS', 'GCP',
+    'Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Kubernetes', 'Redis', 'Cloud Architecture', 'GCP',
     'TypeScript', 'React', 'Node.js', 'GraphQL', 'REST APIs', 'Microservices', 'CI/CD',
     'GitHub Actions', 'SQLAlchemy', 'Git', 'Linux', 'Celery', 'Django', 'Flask',
     'Unit Testing', 'System Design', 'Kafka', 'Terraform', 'Next.js', 'Tailwind CSS'
@@ -1280,7 +1264,9 @@ app.post('/api/resumes/upload', authenticateToken, upload.single('resume'), (req
     }
 
     if (!parsedText || parsedText.trim().length < 30) {
-      parsedText = DEMO_RESUME.parsedText; // Graceful normalization fallback
+      return res.status(400).json({
+        error: 'Could not extract sufficient text from your resume file. Please ensure your file contains readable text or paste your resume content directly.',
+      });
     }
 
     const sections = parseResumeSections(parsedText);
@@ -1402,15 +1388,10 @@ app.get('/api/analysis', authenticateToken, (req, res) => {
   return res.json(userAnalyses);
 });
 
-// ANALYSIS: Demo Analysis
-app.get('/api/analysis/demo', (_req, res) => {
-  return res.json(DEMO_ANALYSIS);
-});
-
-// ANALYSIS: Get By ID
+// ANALYSIS: Get By ID (strictly accessible by owning user)
 app.get('/api/analysis/:id', authenticateToken, (req, res) => {
   const user = (req as any).user;
-  const analysis = db.analyses.find((a) => a.id === req.params.id && (a.userId === user.id || a.isDemo));
+  const analysis = db.analyses.find((a) => a.id === req.params.id && a.userId === user.id);
   if (!analysis) {
     return res.status(404).json({ error: 'Analysis not found' });
   }
@@ -1559,7 +1540,7 @@ function generateFallbackChatResponse(query: string): string {
   const q = query.toLowerCase();
 
   if (q.includes('bullet') || q.includes('rewrite') || q.includes('improve') || q.includes('formula')) {
-    return `### The Google X-Y-Z Bullet Formula\n\nTo pass both automated ATS filters and recruiter scans, frame every experience point using:\n\n> **"Accomplished [X], as measured by [Y], by doing [Z]"**\n\n#### Example Transformation:\n- ❌ **Weak:** *"Created microservices using FastAPI and Docker."*\n- ✅ **Strong:** *"Architected 5 containerized FastAPI microservices processing 12M+ monthly API requests, reducing p99 response latency by 38% via Redis caching."*\n\n**Key principles:**\n1. Lead with active technical verbs (*Architected, Spearheaded, Refactored, Scaled*).\n2. Quantify results with metrics (percentage decrease, monetary savings, scale, or velocity).\n3. State the exact tools used (*FastAPI, PostgreSQL, Docker, AWS ECS*).`;
+    return `### The Google X-Y-Z Bullet Formula\n\nTo pass both automated ATS filters and recruiter scans, frame every experience point using:\n\n> **"Accomplished [X], as measured by [Y], by doing [Z]"**\n\n#### Example Transformation:\n- ❌ **Weak:** *"Created microservices using FastAPI and Docker."*\n- ✅ **Strong:** *"Architected 5 containerized FastAPI microservices processing 12M+ monthly API requests, reducing p99 response latency by 38% via Redis caching."*\n\n**Key principles:**\n1. Lead with active technical verbs (*Architected, Spearheaded, Refactored, Scaled*).\n2. Quantify results with metrics (percentage decrease, monetary savings, scale, or velocity).\n3. State the exact tools used (*FastAPI, PostgreSQL, Docker, Kubernetes*).`;
   }
 
   if (q.includes('ats') || q.includes('format') || q.includes('table') || q.includes('parse')) {
@@ -1567,7 +1548,7 @@ function generateFallbackChatResponse(query: string): string {
   }
 
   if (q.includes('skill') || q.includes('stack') || q.includes('keyword')) {
-    return `### Optimizing Your Technical Skills Section\n\nOrganize your skills categorically so both ATS parsers and hiring managers can triage your stack in 5 seconds:\n\n- **Languages:** Python, TypeScript, Go, SQL, Bash\n- **Frameworks & Libraries:** FastAPI, React, Node.js, Next.js, Django\n- **Cloud & DevOps:** AWS (ECS, S3, RDS), Docker, Kubernetes, Terraform, CI/CD GitHub Actions\n- **Databases & Data Stores:** PostgreSQL, Redis, Elasticsearch, DynamoDB\n\n**Pro-Tip:** Make sure every major skill listed in your skills block is also demonstrated in context under at least one work experience bullet!`;
+    return `### Optimizing Your Technical Skills Section\n\nOrganize your skills categorically so both ATS parsers and hiring managers can triage your stack in 5 seconds:\n\n- **Languages:** Python, TypeScript, Go, SQL, Bash\n- **Frameworks & Libraries:** FastAPI, React, Node.js, Next.js, Django\n- **Cloud & DevOps:** Docker, Kubernetes, Terraform, CI/CD GitHub Actions, Linux\n- **Databases & Data Stores:** PostgreSQL, Redis, Elasticsearch, DynamoDB\n\n**Pro-Tip:** Make sure every major skill listed in your skills block is also demonstrated in context under at least one work experience bullet!`;
   }
 
   if (q.includes('interview') || q.includes('prep') || q.includes('behavioral')) {

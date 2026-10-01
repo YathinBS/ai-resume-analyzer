@@ -9,7 +9,7 @@ import { AuthModal } from './components/auth/AuthModal';
 import { ChatbotWidget } from './components/chat/ChatbotWidget';
 
 function AppContent() {
-  const [view, setView] = useState<'landing' | 'dashboard' | 'demo'>('landing');
+  const [view, setView] = useState<'landing' | 'dashboard'>('landing');
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const [authMode, setAuthMode] = useState<'login' | 'register' | 'forgot-password'>('login');
   const [initialDashboardTab, setInitialDashboardTab] = useState('dashboard');
@@ -50,12 +50,6 @@ function AppContent() {
     }
   };
 
-  const handleExploreDemo = () => {
-    setInitialDashboardTab('analysis-detail');
-    setInitialAnalysisId('demo');
-    setView('dashboard');
-  };
-
   const handleNavigate = (targetView: string) => {
     if (targetView === 'landing') {
       setView('landing');
@@ -66,8 +60,6 @@ function AppContent() {
       } else {
         handleOpenAuth('login');
       }
-    } else if (targetView === 'demo') {
-      handleExploreDemo();
     }
   };
 
@@ -83,7 +75,6 @@ function AppContent() {
           <LandingPage
             onGetStarted={handleGetStarted}
             onSignIn={() => handleOpenAuth('login')}
-            onExploreDemo={handleExploreDemo}
           />
         </>
       ) : (

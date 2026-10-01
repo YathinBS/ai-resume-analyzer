@@ -16,7 +16,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenAuth,
 }) => {
   const { theme, toggleTheme } = useTheme();
-  const { user, isAuthenticated, logout, loginAsDemo } = useAuth();
+  const { user, isAuthenticated, logout } = useAuth();
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-slate-200/80 dark:border-slate-800 bg-white/85 dark:bg-slate-950/85 backdrop-blur-md">
@@ -64,20 +64,18 @@ export const Navbar: React.FC<NavbarProps> = ({
             Features
           </button>
           <button
-            onClick={() => onNavigate(isAuthenticated ? 'dashboard' : 'demo')}
+            onClick={() => {
+              if (isAuthenticated) {
+                onNavigate('dashboard');
+              } else {
+                onOpenAuth('login');
+              }
+            }}
             className={`transition-colors hover:text-slate-900 dark:hover:text-white ${
               currentView === 'dashboard' ? 'text-slate-900 dark:text-white font-semibold' : ''
             }`}
           >
             Dashboard
-          </button>
-          <button
-            onClick={() => onNavigate('demo')}
-            className={`transition-colors hover:text-slate-900 dark:hover:text-white ${
-              currentView === 'demo' ? 'text-slate-900 dark:text-white font-semibold' : ''
-            }`}
-          >
-            Sample Report
           </button>
         </nav>
 

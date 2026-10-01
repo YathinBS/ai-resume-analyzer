@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 
 interface AnalysisResultPageProps {
-  analysisId: string;
+  analysisId?: string;
   onBack: () => void;
   onAnalyzeAnother: () => void;
 }
@@ -41,15 +41,19 @@ export const AnalysisResultPage: React.FC<AnalysisResultPageProps> = ({
     async function loadAnalysis() {
       setIsLoading(true);
       try {
-        if (analysisId === 'demo') {
-          const demo = await api.getDemoAnalysis();
-          setAnalysis(demo);
-        } else {
+        if (analysisId) {
           const data = await api.getAnalysis(analysisId);
           setAnalysis(data);
+        } else {
+          const history = await api.getAnalysisHistory();
+          if (history && history.length > 0) {
+            setAnalysis(history[0]);
+          } else {
+            setAnalysis(null);
+          }
         }
       } catch (err: any) {
-        toast.error('Failed to load analysis results');
+        setAnalysis(null);
       } finally {
         setIsLoading(false);
       }
@@ -61,16 +65,31 @@ export const AnalysisResultPage: React.FC<AnalysisResultPageProps> = ({
     return (
       <div className="py-24 text-center space-y-4">
         <div className="w-10 h-10 border-4 border-slate-200 border-t-slate-900 rounded-full animate-spin mx-auto dark:border-slate-800 dark:border-t-white" />
-        <p className="text-sm text-slate-500">Loading comprehensive resume intelligence...</p>
+        <p className="text-sm text-slate-500">Loading your resume intelligence...</p>
       </div>
     );
   }
 
   if (!analysis) {
     return (
-      <div className="py-24 text-center space-y-4">
-        <p className="text-sm text-slate-500">Analysis could not be found.</p>
-        <Button onClick={onBack}>Back to Dashboard</Button>
+      <div className="max-w-xl mx-auto py-24 text-center space-y-4">
+        <div className="w-14 h-14 rounded-2xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/60 flex items-center justify-center mx-auto text-indigo-600 dark:text-indigo-400">
+          <Layers className="w-7 h-7" />
+        </div>
+        <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100">
+          No Resume Analysis Selected
+        </h2>
+        <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto">
+          You haven't run an analysis yet or no report was selected. Upload your resume and paste your target job description to get your personal ATS score and skill breakdown.
+        </p>
+        <div className="pt-2 flex justify-center gap-3">
+          <Button variant="outline" onClick={onBack}>
+            Back to Dashboard
+          </Button>
+          <Button onClick={onAnalyzeAnother} leftIcon={<Sparkles className="w-4 h-4" />}>
+            Analyze a Resume
+          </Button>
+        </div>
       </div>
     );
   }

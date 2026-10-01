@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { UploadCloud, FileText, CheckCircle2, Trash2, ArrowUpRight, AlertCircle } from 'lucide-react';
-import { DEMO_RESUME } from '../../data/demoData';
+import { UploadCloud, FileText, CheckCircle2, Trash2, AlertCircle } from 'lucide-react';
 
 interface FileUploaderProps {
   onFileSelected: (file: File | null, textContent?: string) => void;
@@ -83,15 +82,6 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
     onFileSelected(null);
   };
 
-  const loadSampleResume = () => {
-    setErrorMsg(null);
-    clearTimer();
-    setUploadProgress(100);
-    const sampleBlob = new Blob([DEMO_RESUME.parsedText], { type: 'application/pdf' });
-    const sampleFile = new File([sampleBlob], DEMO_RESUME.fileName, { type: 'application/pdf' });
-    onFileSelected(sampleFile, DEMO_RESUME.parsedText);
-  };
-
   const formatFileSize = (bytes: number) => {
     if (bytes < 1024) return `${bytes} B`;
     if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
@@ -143,10 +133,10 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
               </div>
               <div className="min-w-0">
                 <h4 className="text-sm font-semibold text-slate-900 dark:text-slate-100 truncate">
-                  {selectedFile?.name || DEMO_RESUME.fileName}
+                  {selectedFile?.name || 'Uploaded Resume'}
                 </h4>
                 <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                  <span>{selectedFile ? formatFileSize(selectedFile.size) : '142.8 KB'}</span>
+                  <span>{selectedFile ? formatFileSize(selectedFile.size) : 'File ready'}</span>
                   <span>·</span>
                   <span className="uppercase">{selectedFile?.name?.split('.').pop() || 'PDF'}</span>
                   <span>·</span>
@@ -184,21 +174,6 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
         <div className="flex items-center gap-2 text-xs text-rose-600 dark:text-rose-400">
           <AlertCircle className="w-4 h-4 shrink-0" />
           <span>{errorMsg}</span>
-        </div>
-      )}
-
-      {/* Quick sample resume loader */}
-      {!selectedFile && !uploadedText && (
-        <div className="flex items-center justify-between pt-1">
-          <span className="text-xs text-slate-500 dark:text-slate-400">Don't have a resume file handy?</span>
-          <button
-            type="button"
-            onClick={loadSampleResume}
-            className="inline-flex items-center gap-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
-          >
-            <span>Load Sample Software Engineer Resume</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </button>
         </div>
       )}
     </div>

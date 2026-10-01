@@ -4,7 +4,7 @@ import { Textarea } from '../ui/Input';
 import { Button } from '../ui/Button';
 import { useToast } from '../ui/Toast';
 import { api } from '../../lib/api';
-import { SAMPLE_JOB_DESCRIPTIONS, DEMO_RESUME } from '../../data/demoData';
+import { SAMPLE_JOB_DESCRIPTIONS } from '../../data/demoData';
 import { Sparkles, CheckCircle2, FileText, ArrowRight, Zap, Eye } from 'lucide-react';
 import { ThinkingOrb } from '../ui/ThinkingOrb';
 import { ThinkingOrbExplorerModal } from '../ui/ThinkingOrbExplorerModal';
@@ -99,14 +99,19 @@ export const AnalyzePage: React.FC<AnalyzePageProps> = ({ onAnalysisComplete }) 
         // Run analysis on the uploaded resume
         analysisResult = await api.analyzeResume({
           resumeId: uploadedResume.id,
-          resumeText: uploadedResume.parsedText || resumeText || DEMO_RESUME.parsedText,
+          resumeText: uploadedResume.parsedText || resumeText,
           fileName: selectedFile.name,
           jobDescription,
         });
       } else {
+        if (!resumeText || resumeText.trim().length < 30) {
+          toast.error('Please paste at least 30 characters of resume content');
+          setIsAnalyzing(false);
+          return;
+        }
         // Text payload
         analysisResult = await api.analyzeResume({
-          resumeText: resumeText || DEMO_RESUME.parsedText,
+          resumeText,
           fileName: 'Pasted_Resume.txt',
           jobDescription,
         });

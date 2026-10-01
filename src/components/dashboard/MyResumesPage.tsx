@@ -16,7 +16,6 @@ import {
   CheckCircle2,
   ArrowRight,
 } from 'lucide-react';
-import { DEMO_RESUME } from '../../data/demoData';
 
 interface MyResumesPageProps {
   onAnalyzeResume: (resumeId: string) => void;

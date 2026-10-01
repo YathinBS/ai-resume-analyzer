@@ -240,7 +240,7 @@ export const DashboardLayout: React.FC<DashboardLayoutProps> = ({
 
           {currentTab === 'analysis-detail' && (
             <AnalysisResultPage
-              analysisId={activeAnalysisId || 'demo'}
+              analysisId={activeAnalysisId}
               onBack={() => handleTabChange('dashboard')}
               onAnalyzeAnother={() => handleTabChange('analyze')}
             />
@@ -259,7 +259,12 @@ export const DashboardLayout: React.FC<DashboardLayoutProps> = ({
             />
           )}
 
-          {currentTab === 'profile' && <ProfilePage />}
+          {currentTab === 'profile' && (
+            <ProfilePage
+              onNavigateToAnalyze={() => handleTabChange('analyze')}
+              onNavigateToAnalysis={(id) => handleTabChange('analysis-detail', id)}
+            />
+          )}
 
           {currentTab === 'settings' && <SettingsPage />}
         </main>

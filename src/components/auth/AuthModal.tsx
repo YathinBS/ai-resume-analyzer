@@ -29,7 +29,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [resetSent, setResetSent] = useState(false);
 
-  const { login, register, loginAsDemo } = useAuth();
+  const { login, register } = useAuth();
   const toast = useToast();
 
   const resetForm = () => {
@@ -95,20 +95,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
     }
   };
 
-  const handleDemoSignIn = async () => {
-    setIsSubmitting(true);
-    try {
-      await loginAsDemo();
-      toast.success('Logged in with Demo Account (Senior Software Engineer)');
-      onClose();
-      if (onSuccess) onSuccess();
-    } catch (err: any) {
-      toast.error('Unable to sign in as demo');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <Modal
       isOpen={isOpen}
@@ -130,36 +116,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       maxWidth="md"
     >
       <div className="space-y-4 pt-2">
-        {/* Quick Demo Login Option */}
-        {mode !== 'forgot-password' && (
-          <button
-            type="button"
-            onClick={handleDemoSignIn}
-            disabled={isSubmitting}
-            className="w-full flex items-center justify-between p-3 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/50 dark:bg-indigo-950/20 text-indigo-950 dark:text-indigo-200 hover:bg-indigo-100/50 dark:hover:bg-indigo-950/40 transition-colors text-left group"
-          >
-            <div className="flex items-center gap-2.5">
-              <Sparkles className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0" />
-              <div>
-                <span className="text-xs font-bold block">1-Click Demo Account</span>
-                <span className="text-[11px] text-indigo-700/80 dark:text-indigo-300/80">
-                  Alex Morgan (Senior Backend Engineer · 87% ATS)
-                </span>
-              </div>
-            </div>
-            <ArrowRight className="w-4 h-4 text-indigo-500 group-hover:translate-x-0.5 transition-transform shrink-0" />
-          </button>
-        )}
-
-        {mode !== 'forgot-password' && (
-          <div className="relative flex items-center justify-center my-3">
-            <div className="w-full border-t border-slate-200 dark:border-slate-800" />
-            <span className="absolute bg-white dark:bg-slate-900 px-3 text-[11px] text-slate-400 uppercase font-medium">
-              or continue with credentials
-            </span>
-          </div>
-        )}
-
         {resetSent ? (
           <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 text-center space-y-2">
             <ShieldCheck className="w-8 h-8 text-emerald-600 dark:text-emerald-400 mx-auto" />

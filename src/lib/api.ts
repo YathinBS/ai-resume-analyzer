@@ -166,11 +166,6 @@ export const api = {
     return handleResponse(res);
   },
 
-  async getDemoAnalysis(): Promise<Analysis> {
-    const res = await fetch(`${API_BASE}/analysis/demo`);
-    return handleResponse(res);
-  },
-
   async deleteAnalysis(id: string): Promise<{ success: boolean }> {
     const res = await fetch(`${API_BASE}/analysis/${id}`, {
       method: 'DELETE',

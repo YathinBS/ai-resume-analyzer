@@ -6,7 +6,7 @@ def parse_resume_sections(text: string) -> Dict[str, Any]:
     lines = [line.strip() for line in text.split("\n") if line.strip()]
     known_skills = [
         "Python", "FastAPI", "Django", "Flask", "PostgreSQL", "MySQL", "MongoDB", "Redis",
-        "Docker", "Kubernetes", "AWS", "GCP", "Azure", "Linux", "Git", "CI/CD", "GitHub Actions",
+        "Docker", "Kubernetes", "Cloud Infrastructure", "GCP", "Azure", "Linux", "Git", "CI/CD", "GitHub Actions",
         "TypeScript", "JavaScript", "React", "Node.js", "Next.js", "Tailwind CSS", "GraphQL",
         "REST APIs", "Microservices", "PyTorch", "TensorFlow", "Celery", "SQLAlchemy"
     ]

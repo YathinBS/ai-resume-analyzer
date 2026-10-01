@@ -85,7 +85,7 @@ Evaluate with technical precision and respond ONLY with a single valid JSON obje
 
 def generate_deterministic_analysis(resume_text: str, job_description: str) -> Dict[str, Any]:
     common_tech = [
-        "Python", "FastAPI", "PostgreSQL", "Docker", "Kubernetes", "Redis", "AWS", "GCP",
+        "Python", "FastAPI", "PostgreSQL", "Docker", "Kubernetes", "Redis", "Cloud Infrastructure", "GCP",
         "TypeScript", "React", "Node.js", "GraphQL", "REST APIs", "Microservices", "CI/CD",
         "GitHub Actions", "SQLAlchemy", "Git", "Linux", "Celery", "Django", "Flask"
     ]

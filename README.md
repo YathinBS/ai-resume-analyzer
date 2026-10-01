@@ -98,7 +98,6 @@ CREATE DATABASE resumeai;
 - `POST /api/analysis` - Run analysis comparing resume text against target job description.
 - `GET /api/analysis` - Fetch user's analysis history.
 - `GET /api/analysis/:id` - Fetch single analysis report with full breakdown.
-- `GET /api/analysis/demo` - Instant sample report for previewing.
 
 ---
 
@@ -135,22 +134,16 @@ This starts:
 
 ---
 
-## 7. AWS Deployment Instructions
+## 7. Production Deployment Instructions
 
-### Option A: AWS Elastic Container Service (ECS Fargate)
-1. Push images to AWS Elastic Container Registry (ECR):
+### Standard Containerized Deployment
+1. Build the production Docker container:
 ```bash
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com
-docker build -t resumeai-frontend .
-docker tag resumeai-frontend:latest <ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/resumeai-frontend:latest
-docker push <ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/resumeai-frontend:latest
+docker build -t resumeai-app .
 ```
-2. Provision an AWS RDS PostgreSQL instance.
-3. Configure ECS Task Definitions with environment secrets stored in AWS Systems Manager Parameter Store or Secrets Manager.
-4. Attach an Application Load Balancer (ALB) for HTTPS termination.
-
-### Option B: AWS EC2 with Docker
-1. Launch an Ubuntu EC2 instance with an attached Elastic IP.
-2. Install Docker and Docker Compose.
-3. Clone repository, populate `.env`, and execute `docker-compose up -d`.
-4. Point DNS A-record to the Elastic IP and generate free SSL certificate via Certbot / Nginx.
+2. Run the container:
+```bash
+docker run -p 3000:3000 --env-file .env resumeai-app
+```
+3. Connect your PostgreSQL database (such as Supabase or standard PostgreSQL instance) via `DATABASE_URL`.
+4. The backend automatically initializes required tables and indexes on first startup.

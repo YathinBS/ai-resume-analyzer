@@ -23,13 +23,11 @@ import { api } from '../../lib/api';
 interface LandingPageProps {
   onGetStarted: () => void;
   onSignIn: () => void;
-  onExploreDemo: () => void;
 }
 
 export const LandingPage: React.FC<LandingPageProps> = ({
   onGetStarted,
   onSignIn,
-  onExploreDemo,
 }) => {
   const [publicStats, setPublicStats] = useState({
     resumesChecked: 1,
@@ -164,13 +162,6 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 >
                   See How It Works
                 </Button>
-                <Button
-                  size="lg"
-                  variant="secondary"
-                  onClick={onExploreDemo}
-                >
-                  Explore Sample Analysis
-                </Button>
               </div>
 
               {/* Feature Highlights */}
@@ -188,7 +179,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
             {/* Right Hero Mockup */}
             <div className="lg:col-span-6 flex justify-center">
-              <AnalysisMockup />
+              <AnalysisMockup onSignIn={onSignIn} onGetStarted={onGetStarted} />
             </div>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { User } from '../types';
 import { api } from '../lib/api';
-import { DEMO_USER } from '../data/demoData';
 
 interface AuthContextType {
   user: User | null;
@@ -10,7 +9,6 @@ interface AuthContextType {
   isLoading: boolean;
   login: (email: string, password: string, rememberMe?: boolean) => Promise<void>;
   register: (name: string, email: string, password: string, targetRole?: string) => Promise<void>;
-  loginAsDemo: () => Promise<void>;
   logout: () => Promise<void>;
   updateUser: (updated: Partial<User>) => Promise<void>;
   refreshUser: () => Promise<void>;
@@ -73,24 +71,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const loginAsDemo = async () => {
-    setIsLoading(true);
-    try {
-      // Login with demo account credentials
-      const res = await api.login({ email: DEMO_USER.email, password: 'demo12345' });
-      localStorage.setItem('resumeai_token', res.token);
-      setToken(res.token);
-      setUser(res.user);
-    } catch (err) {
-      // Fallback local setting if network offline
-      setUser(DEMO_USER);
-      setToken('demo-token-mock');
-      localStorage.setItem('resumeai_token', 'demo-token-mock');
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   const logout = async () => {
     try {
       await api.logout();
@@ -122,7 +102,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isLoading,
         login,
         register,
-        loginAsDemo,
         logout,
         updateUser,
         refreshUser,

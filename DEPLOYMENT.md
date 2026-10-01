@@ -15,7 +15,7 @@ This guide walks you through deploying the application across your chosen archit
 3. Under **Connection string**, select **URI** (or **Session Pooler** / **Transaction Pooler** on port `6543`).
 4. Copy the connection string. It looks like:
    ```text
-   postgresql://postgres.[project-ref]:[YOUR-PASSWORD]@aws-0-[region].pooler.supabase.com:6543/postgres
+   postgresql://postgres.[project-ref]:[YOUR-PASSWORD]@[pooler-host].pooler.supabase.com:6543/postgres
    ```
    *(Replace `[YOUR-PASSWORD]` with your actual database password).*
 

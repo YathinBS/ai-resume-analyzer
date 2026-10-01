@@ -20,7 +20,7 @@ services:
       - key: GEMINI_API_KEY
         sync: false
       # Provide your Supabase PostgreSQL connection string in the Render Dashboard
-      # Format: postgresql://postgres.[project-ref]:[password]@aws-0-[region].pooler.supabase.com:6543/postgres
+      # Format: postgresql://postgres.[project-ref]:[password]@[pooler-host].pooler.supabase.com:6543/postgres
       - key: DATABASE_URL
         sync: false
       # Allow the Vercel frontend URL to make CORS requests (or leave blank to allow all)
