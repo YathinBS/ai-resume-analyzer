@@ -1,0 +1,8 @@
+{
+  "name": "ResumeAI - AI Resume Analyzer",
+  "description": "Intelligent AI-powered resume analysis, ATS compatibility scoring, skill-gap detection, and job-match optimization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

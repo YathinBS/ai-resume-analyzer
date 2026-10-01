@@ -1,0 +1,770 @@
+{
+  "users": [
+    {
+      "id": "demo-user-1",
+      "name": "Alex Morgan",
+      "email": "alex.morgan@example.com",
+      "passwordHash": "$2b$10$o.0UCyUA9ZOWZSEtgINDf.1lcataMzZHl5xJq9wEsW91w8kQ1K5Ua",
+      "targetRole": "Senior Backend Engineer",
+      "preferredIndustry": "Cloud & AI Infrastructure",
+      "createdAt": "2026-08-15T09:30:00Z",
+      "preferences": {
+        "emailNotifications": true,
+        "analysisNotifications": true,
+        "theme": "light"
+      }
+    },
+    {
+      "id": "user-1790836009578",
+      "name": "yathin",
+      "email": "abc@gmail.com",
+      "passwordHash": "$2b$10$sufYTyQajXLQdMA9cyNuc.EWqi32fcCwehbGEEky3MplHBBkCRqCG",
+      "targetRole": "Software Engineer",
+      "preferredIndustry": "Technology",
+      "createdAt": "2026-10-01T06:26:49.578Z",
+      "preferences": {
+        "emailNotifications": true,
+        "analysisNotifications": true,
+        "theme": "light"
+      }
+    },
+    {
+      "id": "user-1790844589622",
+      "name": "Supabase Test",
+      "email": "supatest_1790844589@example.com",
+      "passwordHash": "$2b$10$KyP92uPvYH2anbFsDAHrP.CVuMZXcjeM8qIeCaoybADao25i3ltZ.",
+      "targetRole": "Staff Software Engineer",
+      "preferredIndustry": "Technology",
+      "createdAt": "2026-10-01T08:49:49.622Z",
+      "preferences": {
+        "emailNotifications": true,
+        "analysisNotifications": true,
+        "theme": "light"
+      }
+    }
+  ],
+  "resumes": [
+    {
+      "id": "resume-1790844601479",
+      "userId": "user-1790844589622",
+      "fileName": "Alex_Rivera_Resume.pdf",
+      "fileSize": 138,
+      "fileType": "text/plain",
+      "uploadedAt": "2026-10-01T08:50:01.479Z",
+      "parsedText": "Alex Rivera - Staff Software Engineer with 8 years of experience building distributed systems with Python, Go, Kubernetes, and PostgreSQL.",
+      "sections": {
+        "contact": "Alex Rivera - Staff Software Engineer with 8 years of experience building distributed systems with Python, Go, Kubernetes, and PostgreSQL.",
+        "summary": "",
+        "skills": [
+          "Python",
+          "PostgreSQL",
+          "Kubernetes"
+        ],
+        "experience": [
+          "Alex Rivera - Staff Software Engineer with 8 years of experience building distributed systems with Python, Go, Kubernetes, and PostgreSQL."
+        ],
+        "education": []
+      },
+      "lastScore": 85
+    },
+    {
+      "id": "resume-1790844408049",
+      "userId": "demo-user-1",
+      "fileName": "Megha_PE_Resume.docx",
+      "fileSize": 10040,
+      "fileType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "uploadedAt": "2026-10-01T08:46:48.049Z",
+      "parsedText": "PK\u0003\u0004 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000word/PK\u0003\u0004 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000word/_rels/PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]ƚOe�\u0000\u0000\u0000!\u0004\u0000\u0000\u001c\u0000\u0000\u0000word/_rels/document.xml.rels���N\u0003!\u0010�_�pﲭZ�)�1�Y\u001f���?q\u0019\bL�}{1v+5 ��93��29���fb\u001f��hQ�EUs\u0006�m;b/�[�r�ȷ��+L��D\u0018F\u0017X|�A��= \u0011�\u0000F��:���7�b�{�~W=�e]��O=��'۵��]��9:�����Qó�\u0007\u0003HWV�@� BtT�\u0007�����\u000f\u0017��/K�ǃك�w�%8K9�ے\u0010�����3��\u001c�]I\b��\u000fì�\u0010�f\u0001����4��\u001cª$��滕 �J\u000e�l\u001a�\u001a�� M�I�!��_�|\u0001PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]4炙|\b\u0000\u0000�&\u0000\u0000\u0011\u0000\u0000\u0000word/document.xml�Z�r\"�\u0015��[��jS35�\u0006�1fƳ��\u001d��\u001e\u0002x7U�\\�nѭqw�KRð���C�y����\u0006�7\u0003xg�In�Oҧs���#��\u001f?G!̸�B�ǥ�^�\u0004 �5`^;�yRk�\u0000�cݞ'�q)0&i;�v\u0003\u001e1�\u0017 WI-�fϕ�#�S�rg.��ԫ��}J�t��(I��3� ��>�Lx��S�\"f�U�N��M�T\u0010=aFLD(�\u0002���\u0002F\u001e�R\u0015�s��R \u001a��\u0004�o�\b�ɼِ��:vFG�\u0010e��\u000eD�RcW4l �ٗ��E�j j�����bs��\u00007\u0011��\u0006Ea&��\u0011k� V� �#6\u0011����$\u0011\u0013�j�L�f���v\u0000��\u0000������d���������\u0012�|~ �|��U�O\u0013f\u0014�d�����r�\u0011^�q\u0003� ��¨m r�\u001c9��@�\u001d�P�z�>���PM���\u0007�!��\u0000�T��6$�]�\u0007�k�T��t�\u001b��}��nH�脁�f\u0007(��1\u0016�{[#\u001c:��x�� ����7t���Z��:�J\u001f�\u0011\u001b�S�4�8b]�݄Y\u0003О�P�Elvh,3,`:XG�.���\u0016p�\bmD��Dz �'�2Pt��¼=c�q��4�U�y��Y�f��y��kWۻ��\u0018�_/�_���7g9֐\u001em�0\u0017�H\u0014�\\�x��%�\u0003\u0006\u0003�QW� Ȧ�+& E� >����% �ٴ�+��P��s���߭e\u0010i�v�7\u0012=\"�\u0013�˹���cR\u000ei\u0011n�_\u001e\u0001����\u001a���V}��y�U\u001b$#�\by!�\u0019gT���ON�l��12��\u000f��\u001c���!��X�l�\u001d{=\"q�3�������\u001d��q��m±�A�Z���j=2{\u00074\u000f��H\u001a1c�{Ћ}\u0011s�h\u0006mR�*��\bCz7\u0012��7 b`�(���Xl��L(\u0019��\u001epš\u000f.�^I\u0012.\u00007 �#`��!Z�M,�!�|^\u0006}�Țp�8`\u0002\u000eS�\"�B�\u0013� �)��S�\u000eK�\u0017����GZ�і�^\bm\u0006L1_�$Ȥ��(�)�Y���e[�+�\u0015b.\u0007�(�eR ��\"�#W�\u0004�/e��ӓ2:� н�\u0014���TDë�_��R���䢿F\u000fթ�z\u0019�ϒ�HIŌT�:s�\u0015���;�>\u00054�ʶ��z�&z�\"zWJk�n��f\u0003 uV}�9Rڹ�\u0013�Z\u0011�\u0007J~�y>����A �B1������\\g�rf�=\u001aBqÑs\\!=��\u001cȀr�\u001b�~�RJ\u0014e�\u0010ؚ�ȝ �ܦh(�� ]\u0006#�Q�E�\u0017Q^Pu�\\L?\u001c��G\u0016%o;_g��4?�Z�1:�7\u001aCg�G�0;y��`�\u0019@�\u0015e�!��Q\u0012ڐ�\u001d\u0011-A����}���is�L�9� \u00160k&-�P2�$��XCW�\u000eP�� �d��\u000e\u000f�\u0002�X��j�OZ�d�+\u0013�)�e\u0011Õ���������4􊐇/Jsە�\u0002���F��\u00061@B��@��8aa�����W���jt�\u001f|UT�&:�\u0017�(�\u0007�$H��@Um4��):o��\u001f\u0011�g� %�\u0011n^`��V��*�WC�5\u001e�a��P�]7 W8O�J'�\u0001�V�7b-N\u001eS�\u000f��������XQ�����X�\"\u001d1�� 0�ܛ �3���TB`\u0014Q\u0012�\u0006����2���\u001f� �����%F�_\\��bw��w�f����l|y\u0001e莾�\u0015\u0018,L ��W�.-��7p´p�\u000e����^���N���q���s��sd�\u0013�A:�t��e�0)V+r c�\u0006� ���F��C����\u0013{�\u0001�� \u0015L3 z ��>=ʈ�������w\u001dD!�1���������\b h \b�h�.�p��N�C!\u0017\u0004 '���\u0019e\u001cL��΃ș\u0007}�Q�T 38rS)�� �� �C�#�� �\u0019���3/\u0003���\u000f �r �\u0014\u0013,\u0017^��\u0003 �wAaI�!�`��\u0010���\u001eGD!2*R� �6�\u0005m�x�s\u0006�\u0010�\u0012\u0019��2�i \u0013D � C�\u0004K�\u0012c\u0018�P���/ed �\u001b@h\u0001t�c\u0006/P\u0002 \"�6� 7���|��\u001a�e��P.rմ\u001cp0� O]Ǆ��{�%A�Q\u0014d:�\u0011\u0010�-Ϙ\u0002��\u001f�F���*Dѓ���=)K�\u0019�%�g��\u001fTI�y,^� \u0004�ꤚ -G\u001d��US\u001b��~t�B2S\u001c�y�m\u0015�\u001b�,��y���W�&8:�YVg�qj+tg���幤��ۆ��qٌ���fe�y�V@��M[W�^R\u0013�d�V[�w���\u0012g\u0000PK\u0003\u0004 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000docProps/PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]٦��:\u0001\u0000\u0000�\u0002\u0000\u0000\u0011\u0000\u0000\u0000docProps/core.xml��]k�0\u0014��J�}���hi+lë �)\u001b� ɱ�5\u001f$����j�̛]&���X\u001ee\u0013\u001d�:�U�H��\b\u0014�\\��D��*���y�8m��\u0012���eU0�3m��j\u0003� pQ�(�3S���&�ر=H�@�\u0010ԇ�����ր�4�a �r�)\u0019���lP�\u001f��\u0002�04 Ay�IB���`�{��OF�\u0014�d�!z \u0007���\u0000�m���\u001e � �\\�����Bu�b�����Y�^�j�bE%�\u0002�.�\u00056��u��N\u0000:���Y�[8��+U�'�cq\u0019��\u0006\u001e���y�k�1y~٬P���,N\u0017q6�\u0010���|:K�����v�I�Ŀ����*����?N� PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]di\u0000��\u0002\u0000\u0000 \u000e\u0000\u0000\u0012\u0000\u0000\u0000word/numbering.xml�WKn�0\u0010���}LQ�\u001dC�\u0012� R��\u000fhz\u0000Z�m�����x�}\u0017ݵ۠G�IJʖ�i��r\u0003�+����\u001e���uy}�YP\u0012m�\u0014)@�\u0010\u0004Dd2�b���w�gC\u0010\u0018�E��\u0014$\u0005 b���e�����vn\u0001ϒ�TH���9T(\u000e*�\u000f*�b\u00108ta�Je)�Y�\u0012\bM6#\u001c�\u001e���FNl/�\u001c�Ʉf\u0004VR�0 QX�RZf�\u0018��\u0002�\u0012�\u0006���&\u0015\u0011�8��c�z 9��B�9t�-\u001dSF��a��\u0006F���\"YA���|H�\u0014�\u001a�\b�\u000f�2�Ff\u0005'�֌P\u0013�4HafT���\u0015�\u0019g H��&J��G�����F�� k�}��� Ζ�\u001fGD�\u001e'�!ڈ}$ls6J8�bM�)5\u001b�E��\u0000�]\u00005=�p^jY�5\u001a=\u000em$�-�/�\u0003�V���5s��\u000f3�\b�-\u0007���8�o \u001el�F�k]���D\u0013׭�_\\v�g\u0013K�sM� �&�� ]-��Sz����A�8�\u001coy�8.\u0018#�E�#���Ƿ/����Yed�rW�\u001f�ȝ�/��\"�J�\u0019\u0016ӺI�\u000fB� Wΰ��\u0015��F��Cţ8�>z\u0012�_\u001f\u000eU\u001f�A\u0007��'rq�ᰃ��Dn�\u0013�A}�DnN|ޥj\u0007'rs�a���8\u0015�\u0017]�vx\"�\u0007�~U �^Ŀ>����\\~�ޡol�\u000f �L���&�\u0017;\u0019\u001d�;{p(��w�� ��A�� �: n��s�\u001b����ѿ'�\u001b�vW?\u0001PK\u0003\u0004 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000_rels/PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]\u001f����\u0000\u0000\u0000�\u0002\u0000\u0000 \u0000\u0000\u0000_rels/.rels���J\u00031\u0010�_%̽;�VD�i/R�M�>@Hfw��\u001f&S�oo(�V��C�����7C\u0016�CةW��S�0mZP\u0014mr>�\u001a����\u001d���'�\u0019��2�\\Tm�E� ��\u0011�\u001d(�ҤL��t���z�\u001e��/�'���-�O\u0006�2��i����ھg�����[zHv\u001f(ʙ'~%*�pO��-�C�Yn*\u0016���r��'�@b�\u0011�61M2�n\u0016O�[�� ���\"\u0005g��,���\u000e,���'���\u0007\u0016\u0005@�r�96J��!\u0018�J�RFJ��2Ӥh\u001c��+�W\u0000��T�g\u0005[\u0006t�\u000e�\u0007ʯج�_ԑ������� PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]��ɑ�\u0001\u0000\u0000�\u0006\u0000\u0000\u0012\u0000\u0000\u0000word/footnotes.xmlՔ�N�0\u0010�_%�uR\u0001ZEM9�@�\u0010�}\u0000�8����l'�o���M�,� =q��f~����w��V8/�\u0014$[�$\u0011�C)ͮ ~?,~��\u0007fJ�����'��u�W\u0000�@\u0010>A��ygyA�\u0010lN����/��\u000e \u0002��� ��\u0013n�=\u001d�A3��>M�� �4�+���z�\u00132�4�SU8Z��_PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001d\u0000\u0000\u0000word/_rels/footnotes.xml.relsM�A\u000e\u0002! E�B�w�.�1��n\u000e`�\u0000 V \u000e�Pb �4\u0015qp�,\u0018\u0016_�I���};\\`]�\u001b�ԇ�1U5#\u0011u\u0010{�WD��3�T*� ��2�1[�J�M��d�\u0019��\u0007��\u0003PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]?J���\u0001\u0000\u0000�\u0006\u0000\u0000\u0011\u0000\u0000\u0000word/endnotes.xml͔�n� \u0010�_��>����ʊӋ\u001eV����\u0007�\u0018Ǩ� ����w|\bζU�67�1��o��1�o�j���y � �2%�0\u001cJiv\u0005���a��l�].Li \b����ygyA�\u0010lN����/��\u000e \"k\u0002\u0010�Y��>~��6�U\u001f�e� ���gQ ��&[\u0011O��\b���\u0001\u001d\u0014���Q�\u001cL��\u0019\u001e��۴�����OT`���?PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001c\u0000\u0000\u0000word/_rels/endnotes.xml.relsM�A\u000e\u0002! E�B�w�.�1��n\u000e`�\u0000 V \u000e�Pb �4\u0015qp�,\u0018\u0016_�I���};\\`]�\u001b�ԇ�1U5#\u0011u\u0010{�WD��3�T*� ��2�1[�J�M��d�\u0019��\u0007��\u0003PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]M��ʡ\u0001\u0000\u0000s\u0005\u0000\u0000\u0011\u0000\u0000\u0000word/settings.xml���n�0 �_��}\"�X���[t+��b�E�\u0007`%�\u0016\"Q�$��ۏ��?@�4W�A�;G�����d� Q;�X��Y�P8�����??V_Y\u0016\u0013�\u0004�PUl�\"���\u001eʨR�C1#\u0000�r�bmJ�� ��o�˫��� 6�\u0002 J�E�/���?PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]��9��\u0001\u0000\u0000�\b\u0000\u0000\u0011\u0000\u0000\u0000word/comments.xml���r� \u0018\u0006�[q8W�XS7Ӵ'���x� ���4� �ѻ_R%I��N�G�$ߓ�����I4�#5�+Y�|��\u0005�X\u0011.�5x��܂�uH\u0012�(Ikp�\u0016 �\u0015VBP���\u0003�V�T\u0003朮 ��Q��Jpl�U;���B��qL!1��6,��\u000eb���'�\u001b�ld\u0003�m \u0015 P��\"���l��]�\b�K�|�HڤI�Y\\�&\u0015�t�&�ci�&E���\u0011�4���N\u0019���i�P �y�K\u000fk��\u0007o�;{3+\u0003���LH�zA��l�\u001e Eh�&AQ58\u0018Y]��|\u0017���_?����ȳn;�\u001c\u001a��.���k�י���, ǟ\u0016q\u0014M�������*C����o�(L��\u001d>_�\u001c�)�����g1�&�#\u001d�OL����!��o���jF��\u0013\u000f�\u0000\u0014\u0011Pb:��\u000f��j@ �4\u0015qp�,\u0018\u0016_�I���};\\`]�\u001b�ԇ�1U5#\u0011u\u0010{�WD��3�T*� ��2�1[�J�M��d�\u0019��\u0007��\u0003PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]c�^�\u001d\u0001\u0000\u0000C\u0003\u0000\u0000\u0012\u0000\u0000\u0000word/fontTable.xml���n� \u0014\u0007�W!�+���i��,Kv�=\u0000\u0002�D\u000e���Է\u001f��k��\u0015\u0010���|l�Wp��\u0004��+�Zf�\u0019�P[�����b�\u0019E�t�M�o��~���5�H,�=��*��ؖB�j HZbk|��1���\u0019�\u0002d8�ۅBhe�\u0007�l�� �4\u0015qp�,\u0018\u0016_�I���};\\`]�\u001b�ԇ�1U5#\u0011u\u0010{�WD��3�T*� ��2�1[�J�M��d�\u0019��\u0007��\u0003PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000word/PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000#\u0000\u0000\u0000word/_rels/PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]ƚOe�\u0000\u0000\u0000!\u0004\u0000\u0000\u001c\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000L\u0000\u0000\u0000word/_rels/document.xml.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]4炙|\b\u0000\u0000�&\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0001\u0000\u0000word/document.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]��%��\u0002\u0000\u0000�\u0010\u0000\u0000\u000f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000+ \u0000\u0000word/styles.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000; \u0000\u0000docProps/PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]٦��:\u0001\u0000\u0000�\u0002\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000b \u0000\u0000docProps/core.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]di\u0000��\u0002\u0000\u0000 \u000e\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u000e\u0000\u0000word/numbering.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0011\u0000\u0000_rels/PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]\u001f����\u0000\u0000\u0000�\u0002\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0011\u0000\u0000_rels/.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�����\u0001\u0000\u00008\b\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0012\u0000\u0000[Content_Types].xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]Xy�\"�\u0000\u0000\u0000�\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0014\u0000\u0000docProps/custom.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]���ړ\u0000\u0000\u0000�\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000H\u0015\u0000\u0000docProps/app.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]��ɑ�\u0001\u0000\u0000�\u0006\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0016\u0000\u0000word/footnotes.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001d\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0018\u0000\u0000word/_rels/footnotes.xml.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]?J���\u0001\u0000\u0000�\u0006\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0018\u0000\u0000word/endnotes.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u001a\u0000\u0000word/_rels/endnotes.xml.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]M��ʡ\u0001\u0000\u0000s\u0005\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000F\u001b\u0000\u0000word/settings.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]��9��\u0001\u0000\u0000�\b\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0016\u001d\u0000\u0000word/comments.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u001f\u0000\u0000word/_rels/comments.xml.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]c�^�\u001d\u0001\u0000\u0000C\u0003\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u001f\u0000\u0000word/fontTable.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001d\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000� \u0000\u0000word/_rels/fontTable.xml.relsPK\u0005\u0006\u0000\u0000\u0000\u0000\u0016\u0000\u0016\u0000|\u0005\u0000\u0000�!\u0000\u0000\u0000\u0000",
+      "sections": {
+        "contact": "PK\u0003\u0004 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000word/PK\u0003\u0004 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000word/_rels/PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]ƚOe�\u0000\u0000\u0000!\u0004\u0000\u0000\u001c\u0000\u0000\u0000word/_rels/document.xml.rels���N\u0003!\u0010�_�pﲭZ�)�1�Y\u001f���?q\u0019\bL�}{1v+5 ��93��29���fb\u001f��hQ�EUs\u0006�m;b/�[�r�ȷ��+L��D\u0018F\u0017X|�A��= \u0011�\u0000F��:���7�b�{�~W=�e]��O=��'۵��]��9:�����Qó�\u0007\u0003HWV�@� BtT�\u0007�����\u000f\u0017��/K�ǃك�w�%8K9�ے\u0010�����3��\u001c�]I\b��\u000fì�\u0010�f\u0001����4��\u001cª$��滕 �J\u000e�l\u001a�\u001a�� M�I�!��_�|\u0001PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]4炙|\b\u0000\u0000�&\u0000\u0000\u0011\u0000\u0000\u0000word/document.xml�Z�r\"�\u0015��[��jS35�\u0006�1fƳ��\u001d��\u001e\u0002x7U�\\�nѭqw�KRð���C�y����\u0006�7\u0003xg�In�Oҧs���#��\u001f?G!̸�B�ǥ�^�\u0004 �5`^;�yRk�\u0000�cݞ'�q)0&i;�v\u0003\u001e1�\u0017 WI-�fϕ�#�S�rg.��ԫ��}J�t��(I��3� ��>�Lx��S�\"f�U�N��M�T\u0010=aFLD(�\u0002���\u0002F\u001e�R\u0015�s��R \u001a��\u0004�o�\b�ɼِ��:vFG�\u0010e��\u000eD�RcW4l �ٗ��E�j j�����bs��\u00007\u0011��\u0006Ea&��\u0011k� V� �#6\u0011����$\u0011\u0013�j�L�f���v\u0000��\u0000������d���������\u0012�|~ �|��U�O\u0013f\u0014�d�����r�\u0011^�q\u0003� ��¨m r�\u001c9��@�\u001d�P�z�>���PM���\u0007�!��\u0000�T��6$�]�\u0007�k�T��t�\u001b��}��nH�脁�f\u0007(��1\u0016�{[#\u001c:��x�� ����7t���Z��:�J\u001f�\u0011\u001b�S�4�8b]�݄Y\u0003О�P�Elvh,3,`:XG�.���\u0016p�\bmD��Dz �'�2Pt��¼=c�q��4�U�y��Y�f��y��kWۻ��\u0018�_/�_���7g9֐\u001em�0\u0017�H\u0014�\\�x��%�\u0003\u0006\u0003�QW� Ȧ�+& E� >����% �ٴ�+��P��s���߭e\u0010i�v�7\u0012=\"�\u0013�˹���cR\u000ei\u0011n�_\u001e\u0001����\u001a���V}��y�U\u001b$#�\by!�\u0019gT���ON�l��12��\u000f��\u001c���!��X�l�\u001d{=\"q�3�������\u001d��q��m±�A�Z���j=2{\u00074\u000f��H\u001a1c�{Ћ}\u0011s�h\u0006mR�*��\bCz7\u0012��7 b`�(���Xl��L(\u0019��\u001epš\u000f.�^I\u0012.\u00007 �#`��!Z�M,�!�|^\u0006}�Țp�8`\u0002\u000eS�\"�B�\u0013� �)��S�\u000eK�\u0017����GZ�і�^\bm\u0006L1_�$Ȥ��(�)�Y���e[�+�\u0015b.\u0007�(�eR ��\"�#W�\u0004�/e��ӓ2:� н�\u0014���TDë�_��R���䢿F\u000fթ�z\u0019�ϒ�HIŌT�:s�\u0015���;�>\u00054�ʶ��z�&z�\"zWJk�n��f\u0003 uV}�9Rڹ�\u0013�Z\u0011�\u0007J~�y>����A �B1������\\g�rf�=\u001aBqÑs\\!=��\u001cȀr�\u001b�~�RJ\u0014e�\u0010ؚ�ȝ �ܦh(�� ]\u0006#�Q�E�\u0017Q^Pu�\\L?\u001c��G\u0016%o;_g��4?�Z�1:�7\u001aCg�G�0;y��`�\u0019@�\u0015e�!��Q\u0012ڐ�\u001d\u0011-A����}���is�L�9� \u00160k&-�P2�$��XCW�\u000eP�� �d��\u000e\u000f�\u0002�X��j�OZ�d�+\u0013�)�e\u0011Õ���������4􊐇/Jsە�\u0002���F��\u00061@B��@��8aa�����W���jt�\u001f|UT�&:�\u0017�(�\u0007�$H��@Um4��):o��\u001f\u0011�g� %�\u0011n^`��V��*�WC�5\u001e�a��P�]7 W8O�J'�\u0001�V�7b-N\u001eS�\u000f��������XQ�����X�\"\u001d1�� 0�ܛ �3���TB`\u0014Q\u0012�\u0006����2���\u001f� �����%F�_\\��bw��w�f����l|y\u0001e莾�\u0015\u0018,L ��W�.-��7p´p�\u000e����^���N���q���s��sd�\u0013�A:�t��e�0)V+r c�\u0006� ���F��C����\u0013{�\u0001�� \u0015L3 z ��>=ʈ�������w\u001dD!�1���������\b h \b�h�.�p��N�C!\u0017\u0004 '���\u0019e\u001cL��΃ș\u0007}�Q�T 38rS)�� �� �C�#�� �\u0019���3/\u0003���\u000f �r �\u0014\u0013,\u0017^��\u0003 �wAaI�!�`��\u0010���\u001eGD!2*R� �6�\u0005m�x�s\u0006�\u0010�\u0012\u0019��2�i \u0013D � C�\u0004K�\u0012c\u0018�P���/ed �\u001b@h\u0001t�c\u0006/P\u0002 \"�6� 7���|��\u001a�e��P.rմ\u001cp0� O]Ǆ��{�%A�Q\u0014d:�\u0011\u0010�-Ϙ\u0002��\u001f�F���*Dѓ���=)K�\u0019�%�g��\u001fTI�y,^� \u0004�ꤚ -G\u001d��US\u001b��~t�B2S\u001c�y�m\u0015�\u001b�,��y���W�&8:�YVg�qj+tg���幤��ۆ��qٌ���fe�y�V@��M[W�^R\u0013�d�V[�w���\u0012g\u0000PK\u0003\u0004 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000docProps/PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]٦��:\u0001\u0000\u0000�\u0002\u0000\u0000\u0011\u0000\u0000\u0000docProps/core.xml��]k�0\u0014��J�}���hi+lë �)\u001b� ɱ�5\u001f$����j�̛]&���X\u001ee\u0013\u001d�:�U�H��\b\u0014�\\��D��*���y�8m��\u0012���eU0�3m��j\u0003� pQ�(�3S���&�ر=H�@�\u0010ԇ�����ր�4�a �r�)\u0019���lP�\u001f��\u0002�04 Ay�IB���`�{��OF�\u0014�d�!z \u0007���\u0000�m���\u001e � �\\�����Bu�b�����Y�^�j�bE%�\u0002�.�\u00056��u��N\u0000:���Y�[8��+U�'�cq\u0019��\u0006\u001e���y�k�1y~٬P���,N\u0017q6�\u0010���|:K�����v�I�Ŀ����*����?N� PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]di\u0000��\u0002\u0000\u0000 \u000e\u0000\u0000\u0012\u0000\u0000\u0000word/numbering.xml�WKn�0\u0010���}LQ�\u001dC�\u0012� R��\u000fhz\u0000Z�m�����x�}\u0017ݵ۠G�IJʖ�i��r\u0003�+����\u001e���uy}�YP\u0012m�\u0014)@�\u0010\u0004Dd2�b���w�gC\u0010\u0018�E��\u0014$\u0005 b���e�����vn\u0001ϒ�TH���9T(\u000e*�\u000f*�b\u00108ta�Je)�Y�\u0012\bM6#\u001c�\u001e���FNl/�\u001c�Ʉf\u0004VR�0 QX�RZf�\u0018��\u0002�\u0012�\u0006���&\u0015\u0011�8��c�z 9��B�9t�-\u001dSF��a��\u0006F���\"YA���|H�\u0014�\u001a�\b�\u000f�2�Ff\u0005'�֌P\u0013�4HafT���\u0015�\u0019g H��&J��G�����F�� k�}��� Ζ�\u001fGD�\u001e'�!ڈ}$ls6J8�bM�)5\u001b�E��\u0000�]\u00005=�p^jY�5\u001a=\u000em$�-�/�\u0003�V���5s��\u000f3�\b�-\u0007���8�o \u001el�F�k]���D\u0013׭�_\\v�g\u0013K�sM� �&�� ]-��Sz����A�8�\u001coy�8.\u0018#�E�#���Ƿ/����Yed�rW�\u001f�ȝ�/��\"�J�\u0019\u0016ӺI�\u000fB� Wΰ��\u0015��F��Cţ8�>z\u0012�_\u001f\u000eU\u001f�A\u0007��'rq�ᰃ��Dn�\u0013�A}�DnN|ޥj\u0007'rs�a���8\u0015�\u0017]�vx\"�\u0007�~U �^Ŀ>����\\~�ޡol�\u000f �L���&�\u0017;\u0019\u001d�;{p(��w�� ��A�� �: n��s�\u001b����ѿ'�\u001b�vW?\u0001PK\u0003\u0004 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000_rels/PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]\u001f����\u0000\u0000\u0000�\u0002\u0000\u0000 \u0000\u0000\u0000_rels/.rels���J\u00031\u0010�_%̽;�VD�i/R�M�>@Hfw��\u001f&S�oo(�V��C�����7C\u0016�CةW��S�0mZP\u0014mr>�\u001a����\u001d���'�\u0019��2�\\Tm�E� ��\u0011�\u001d(�ҤL��t���z�\u001e��/�'���-�O\u0006�2��i����ھg�����[zHv\u001f(ʙ'~%*�pO��-�C�Yn*\u0016���r��'�@b�\u0011�61M2�n\u0016O�[�� ���\"\u0005g��,���\u000e,���'���\u0007\u0016\u0005@�r�96J��!\u0018�J�RFJ��2Ӥh\u001c��+�W\u0000��T�g\u0005[\u0006t�\u000e�\u0007ʯج�_ԑ������� PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]��ɑ�\u0001\u0000\u0000�\u0006\u0000\u0000\u0012\u0000\u0000\u0000word/footnotes.xmlՔ�N�0\u0010�_%�uR\u0001ZEM9�@�\u0010�}\u0000�8����l'�o���M�,� =q��f~����w��V8/�\u0014$[�$\u0011�C)ͮ ~?,~��\u0007fJ�����'��u�W\u0000�@\u0010>A��ygyA�\u0010lN����/��\u000e \u0002��� ��\u0013n�=\u001d�A3��>M�� �4�+���z�\u00132�4�SU8Z��_PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001d\u0000\u0000\u0000word/_rels/footnotes.xml.relsM�A\u000e\u0002! E�B�w�.�1��n\u000e`�\u0000 V \u000e�Pb �4\u0015qp�,\u0018\u0016_�I���};\\`]�\u001b�ԇ�1U5#\u0011u\u0010{�WD��3�T*� ��2�1[�J�M��d�\u0019��\u0007��\u0003PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]?J���\u0001\u0000\u0000�\u0006\u0000\u0000\u0011\u0000\u0000\u0000word/endnotes.xml͔�n� \u0010�_��>����ʊӋ\u001eV����\u0007�\u0018Ǩ� ����w|\bζU�67�1��o��1�o�j���y � �2%�0\u001cJiv\u0005���a��l�].Li \b����ygyA�\u0010lN����/��\u000e \"k\u0002\u0010�Y��>~��6�U\u001f�e� ���gQ ��&[\u0011O��\b���\u0001\u001d\u0014���Q�\u001cL��\u0019\u001e��۴�����OT`���?PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001c\u0000\u0000\u0000word/_rels/endnotes.xml.relsM�A\u000e\u0002! E�B�w�.�1��n\u000e`�\u0000 V \u000e�Pb �4\u0015qp�,\u0018\u0016_�I���};\\`]�\u001b�ԇ�1U5#\u0011u\u0010{�WD��3�T*� ��2�1[�J�M��d�\u0019��\u0007��\u0003PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]M��ʡ\u0001\u0000\u0000s\u0005\u0000\u0000\u0011\u0000\u0000\u0000word/settings.xml���n�0 �_��}\"�X���[t+��b�E�\u0007`%�\u0016\"Q�$��ۏ��?@�4W�A�;G�����d� Q;�X��Y�P8�����??V_Y\u0016\u0013�\u0004�PUl�\"���\u001eʨR�C1#\u0000�r�bmJ�� ��o�˫��� 6�\u0002 J�E�/���?PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]��9��\u0001\u0000\u0000�\b\u0000\u0000\u0011\u0000\u0000\u0000word/comments.xml���r� \u0018\u0006�[q8W�XS7Ӵ'���x� ���4� �ѻ_R%I��N�G�$ߓ�����I4�#5�+Y�|��\u0005�X\u0011.�5x��܂�uH\u0012�(Ikp�\u0016 �\u0015VBP���\u0003�V�T\u0003朮 ��Q��Jpl�U;���B��qL!1��6,��\u000eb���'�\u001b�ld\u0003�m \u0015 P��\"���l��]�\b�K�|�HڤI�Y\\�&\u0015�t�&�ci�&E���\u0011�4���N\u0019���i�P �y�K\u000fk��\u0007o�;{3+\u0003���LH�zA��l�\u001e Eh�&AQ58\u0018Y]��|\u0017���_?����ȳn;�\u001c\u001a��.���k�י���, ǟ\u0016q\u0014M�������*C����o�(L��\u001d>_�\u001c�)�����g1�&�#\u001d�OL����!��o���jF��\u0013\u000f�\u0000\u0014\u0011Pb:��\u000f��j@ �4\u0015qp�,\u0018\u0016_�I���};\\`]�\u001b�ԇ�1U5#\u0011u\u0010{�WD��3�T*� ��2�1[�J�M��d�\u0019��\u0007��\u0003PK\u0003\u0004 \u0000\u0000\u0000\b\u0000|X9]c�^�\u001d\u0001\u0000\u0000C\u0003\u0000\u0000\u0012\u0000\u0000\u0000word/fontTable.xml���n� \u0014\u0007�W!�+���i��,Kv�=\u0000\u0002�D\u000e���Է\u001f��k��\u0015\u0010���|l�Wp��\u0004��+�Zf�\u0019�P[�����b�\u0019E�t�M�o��~���5�H,�=��*��ؖB�j HZbk|��1���\u0019�\u0002d8�ۅBhe�\u0007�l�� �4\u0015qp�,\u0018\u0016_�I���};\\`]�\u001b�ԇ�1U5#\u0011u\u0010{�WD��3�T*� ��2�1[�J�M��d�\u0019��\u0007��\u0003PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000word/PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000#\u0000\u0000\u0000word/_rels/PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]ƚOe�\u0000\u0000\u0000!\u0004\u0000\u0000\u001c\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000L\u0000\u0000\u0000word/_rels/document.xml.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]4炙|\b\u0000\u0000�&\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0001\u0000\u0000word/document.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]��%��\u0002\u0000\u0000�\u0010\u0000\u0000\u000f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000+ \u0000\u0000word/styles.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000; \u0000\u0000docProps/PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]٦��:\u0001\u0000\u0000�\u0002\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000b \u0000\u0000docProps/core.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]di\u0000��\u0002\u0000\u0000 \u000e\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u000e\u0000\u0000word/numbering.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\u0000\u0000|X9]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000�\u0011\u0000\u0000_rels/PK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]\u001f����\u0000\u0000\u0000�\u0002\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0011\u0000\u0000_rels/.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�����\u0001\u0000\u00008\b\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0012\u0000\u0000[Content_Types].xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]Xy�\"�\u0000\u0000\u0000�\u0000\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0014\u0000\u0000docProps/custom.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]���ړ\u0000\u0000\u0000�\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000H\u0015\u0000\u0000docProps/app.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]��ɑ�\u0001\u0000\u0000�\u0006\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0016\u0000\u0000word/footnotes.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001d\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0018\u0000\u0000word/_rels/footnotes.xml.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]?J���\u0001\u0000\u0000�\u0006\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0018\u0000\u0000word/endnotes.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u001a\u0000\u0000word/_rels/endnotes.xml.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]M��ʡ\u0001\u0000\u0000s\u0005\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000F\u001b\u0000\u0000word/settings.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]��9��\u0001\u0000\u0000�\b\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0016\u001d\u0000\u0000word/comments.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u001f\u0000\u0000word/_rels/comments.xml.relsPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]c�^�\u001d\u0001\u0000\u0000C\u0003\u0000\u0000\u0012\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u001f\u0000\u0000word/fontTable.xmlPK\u0001\u0002\u0014\u0000 \u0000\u0000\u0000\b\u0000|X9]�w��m\u0000\u0000\u0000{\u0000\u0000\u0000\u001d\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000� \u0000\u0000word/_rels/fontTable.xml.relsPK\u0005\u0006\u0000\u0000\u0000\u0000\u0016\u0000\u0016\u0000|\u0005\u0000\u0000�!\u0000\u0000\u0000\u0000",
+        "summary": "",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git",
+          "REST APIs"
+        ],
+        "experience": [],
+        "education": []
+      },
+      "lastScore": 81
+    },
+    {
+      "id": "resume-1790836039946",
+      "userId": "user-1790836009578",
+      "fileName": "Yathin_BS_Resume_LTM.pdf",
+      "fileSize": 5523,
+      "fileType": "application/pdf",
+      "uploadedAt": "2026-10-01T06:27:19.946Z",
+      "parsedText": "%PDF-1.4\n%     ReportLab Generated PDF document (opensource)\n1 0 obj\n/F1 2 0 R /F2 3 0 R /F3 4 0 R\n2 0 obj\n/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font\n3 0 obj\n/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font\n4 0 obj\n/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font\n5 0 obj\n/Contents 10 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 9 0 R /Resources <<\n/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]\n>> /Rotate 0 /Trans <<\n/Type /Page\n6 0 obj\n/Contents 11 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 9 0 R /Resources <<\n/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]\n>> /Rotate 0 /Trans <<\n/Type /Page\n7 0 obj\n/PageMode /UseNone /Pages 9 0 R /Type /Catalog\n8 0 obj\n/Author (\\(anonymous\\)) /CreationDate (D:20260529132621+00'00') /Creator (\\(unspecified\\)) /Keywords () /ModDate (D:20260529132621+00'00') /Producer (ReportLab PDF Library - \\(opensource\\))\n/Subject (\\(unspecified\\)) /Title (\\(anonymous\\)) /Trapped /False\n9 0 obj\n/Count 2 /Kids [ 5 0 R 6 0 R ] /Type /Pages\n10 0 obj\n/Filter [ /ASCII85Decode /FlateDecode ] /Length 2959\nstream\nGb!#^?$G!`(4FN43):PU\"0U_r53?PbjYjIk9n@KU>q7SF<fCp4b?)!5@BKFek=EUQBqWhM8_U6I`^2`?g1R%!,SREPO-nNA!B=B#S)4J_#8YoV4NiAr'ZQ&p^J;kIV;JUqa6bq7lh2m=B+t1`hR857#$h9Gl1V_a%kM@d^Ao.B@%X59#!5Lt#R;>*K[\\HR[/Q`oMPkD#o@L5A',LVt@t);0S`>%h\\@W^TUg_ond>=pEeC,CN'.hc5HgiX4BW[8\"k*>`@J\"hVefEq`_AaF73?+p@;CI\"Q]&fZUFqE=_lrDT\"O1bN=dL(@7\\1oE:>%?iX0oS=B3mXZ7frdb9lDm!*dG6T+kQ/fCLWEupECIRTQ%VDh4_qB8sK9)r!a.pW7bP2A?M.?5H8+4;8[X!@3one_3_q4@`G:0BS+p\"lCd)`qZ(GX/.p##-H)Z=SK_6rqU/>nQ\"T_We=0>;<&oMV<>SDVbbKt&Va67+PP,)(<X=W/u=\"lhH!.:\\O=&ZE>J=dm6.bEX6P)3o%u4eGLc=0FnEG,*g='R6'&RAq\"JJEAOkSDt-W<%=2CIg]+)V5V29[;?r=Z3Qt\\.t\\Y?G>]+mG*iZ1=Ve1aB>H(Z!KBD$n2OJ$5:CNBhbhK<A@F**=b:7niJoM5efkkAB<$sBKFf?n+JC6DQu6NP(dCUJIj!0Enn!q>]\\5-?,oM\\(G=':mYQb/s'S!D2a.?9`nOC6%HG3g=QYX*&`Eg^)Lm8'4;V])/2_IiKMT$4k:trJIKTb6Pc\\7<kb*<\"a3m=UAQdi(M]7EJ@[!NMOa)=2'L5X0oM^.S/#8VRd[Zd_@a(b0Q&br/\"ma>k5JSpe]s1gjfJlp9C^Qq7QF:;4\\WqKjK.@oK0FH3ERHVnj4h]e*D<Q=DBj.373Q<mfkT\\HsR/io)+D?qi7G.c8SF1MRgl;^l,[Th<PIG2</`,73lOZ#7d?X'Ko<m/oXWBgA\\c?&AmiYiT?0,T1!YC3d++#o9'T'b-1mUV>BGY.&1j]O,I=t[oV7eMj4b[,-=\"DXE@1?_k3j5VV7pS<(AUm`d/ZuXGIIHB\"tfku5*3.Cn*''Ggq`IO\\>!LG!:DZW6E(.E7BaMSGVH\\WHdI2kV7blZ_)7+NqGMjPuJ?f`dPO84/aH7%T9UFj5V\"re$\\1MJgFYPRtk,?EY#WN6#L`]U&S_ASD8.(1WLi\\o#k4<eq?]fdlP2fO*K)N\\9H167<eMt-#t@PSis@K'[jSK<p[qcJLG:Dcd=J`#\\k3sbk]AP[r%X\\1)e8WuP4b:-/\\!``V+HS6eclWJjXhhN6'4rB,mO0m26,&P5r%I`O5C2iL'.[8[.%ebG'2,pMc0*]sV0r&#21>4*Al\"k?'ob\"\"qghjrF4C>nnEWU0Ii_fOm3-ASi;BpaL=I)/\\4s-+PkO3e_R-s3*WPRIM][bQO4I8Ku(Qta%`S*\"@KME4C_[3u,oBCI,ks(2LqhtI`Cu7ie(9\"PHe!%tBjuV1D)Go=2bjrKl@3e/jQY&p&,#q_U_<2o5T)4,hRq!lSF&SJj#uDk/,_`CN23flY@5Pg3oEIPMKPfhpj'/&tNJ*B::JLGu&68hPF*]]s],TD9AjgrE4M724e=.jV`'M`CXMGRi6+>`eo`*^'?_n:3(apn5//_A,'8Jm!DgB'OGnFIq/8NM<b$\"9tBd)_FG/%+TKj08Hp:\\ANE\\[/,r4J85(sn?j4O=_B2&ZCJ.`@t.@\"f?F4c3<@:ag#TNJ+lOW`tt(]7JSp9#G%AeR%@J:!1tTCjU*-Y\"5`IcdAn$RR!<i2cZQ987W/5AZ2<sZaek_j4A'3.,n(/oH+EBaYCJUQI?fU<1u-09=CS(>SIfhA2MmWG$'CGGceJ2`OID.BD0F!s\"oQ%\\cT-*ZV66MEpO@s$?01s(:05MG-P<(gBXVMFBIrFfQgeV*0K#!eWDBo;9FmQ,oE34&s*5DIGYB?$OT98;9tV/q?sHsQr^r%HV%&#6R0N>6/mu5\"VPp\\YR#2/W_.*E`\\qW]JjMttEYg:R`OXYB/pTu6Z4@o??a\\)%fBZPoQ!:!LQH$o+G7n+'KoSHRpq'h<Q>tZ)5oI_!CUUt#3ke4Ub,pocME(%JEuNg6k43H9`KJ7ML05:1,5M[=])T[2NmR\\t8\\a&*%q`mEe6SCfVD;l;6=1HUl7d.HIfJ/cmW>!IQ1S?S^@ro8[,>r,cVI@o3k=J4)e9\\O<0:`Yk*fn9@M7cKiolo%UbFLH;o+?F7;U*ZSsHN0Ucu,p7ae7oggYdFk2_,[`='7fXm+ut`lJsK:Z_E.X7C+PKT\"j5Y8A5k6Cq_m8W`JRk)S$[(#DAd>aF6)n76WXp)%puXX.b(IO)C;'3l!bOkhlQC0O,]>-F:4XFj!RaC7G&',?e@7JFFYNWoM_-3icITi:XJR-<H>qptjnd_Jh>R!\"_%%\"<M;jft810a!o9%S'U(OjJ3LC\"Zmj=b6-?%bhdtYqjeTn?92eDU'0**KouJh=EJPe[HTsbYj`5c]&f!58M@1Yh7WZoUDlM\\5Hs[Yo(e>k%BlN'Y*]%QfHb0Hnd\\An<ik8k0`itYC&mmD=mk`+nH).3i.L!nI-(PD#>jS&??Gumr+bGQtSW6U@!Som=pCK,M@AIj3b\\_VR'\"*5t2rp+2Jn7nEjj4Lu[oP9]RLQA;EjV[/9D.Y%b[]Sf9luOiFu$;d(YJI.>q/Z1:d?hqPaeH+b`&<?]sU,PNSb7^GJ3DcE-O)5.mA\".iB&+6c9*Nff?QH1]/Frt<u7;(aY54(+$TbeOdG=J%;4(6-FB1DVT?;VUr,5A7j?*&FV!+C(Z;@aL@,f:0!UT!p,!YL1gsZ^\\ua%\\qVLp7h99Kh]6@L7m`NFd;:1=3Ze<qNFj#;\\a`U4oYHg__Q8%(q*#[.YR<B-;Q])QsTM.R,,eJh*&hZ]=Qj#kKnQc'tW,_CbkuF4s+,_k5+TCpVgt$)1A+$-DSo9iTu@V.9A`7;Ao)IL]f+*#H\"Yej8~>endstream\n11 0 obj\n/Filter [ /ASCII85Decode /FlateDecode ] /Length 661\nstream\nGb!$C9lJc?%#46L(%5j-[j&5M%l_*P_1E+5\\eamK5V@r=3,3$HQ/r_YpS3s`9t(8HD?BoD#0E4k6c&m2Ru#Cb#,XD`k5lhr^4I3qLWI6hF+3Y$+a0!CXIl;@EJeS&o`nVD302mc\\;s0(1?A+/.#C9)O@c1WlEm=q&6X15r#q:e:_\\7J0aR=$o+[CMrgNW(QqhCDZ)oC53OKnaCL*ouo[ZIQ:c2kXYXm4t^:QuUePZ]f9%;;1MU/XQj4c(t>H-2SJrda]Z+;`_aMF(A>HFnnRNruLErI,n7QQQ1NJuO:e^h+a8Ztek5$38JOsRY^XdUZk3;Ysphc6hi/EB]CjV>3%]e4B9B01it./k=d\\$HragmuK[2oRlJ(GUu9.\\ru]j\\c\"5>;r!51V[Kpf'rIC&i8jB((<tVVAEWX8D>JQ/60lP[5)iHJ2<5LpE[V+Sum?-B@n<aGD5K*7H0SrF\\QiIe0u3-T>c-Gb5-@5\\2bDGT$&:p\"N117,(qPjhH-f#dIN!\\/@9L%^QtH5\"D)hul:<7,I&\"igWCsj3=.n#>gnMYH(UhE>R'd?lDc`lEn7_0pVQuq;)GGn+)\\fo7n]g8cK7@dfS\"E-$_*90Te$>X-R$+GEmTau,p??,;T+&$38u-Atr02Z4%&WgiQhYtc>l4Xjoi:Y~>endstream\n0 12\n0000000000 65535 f\n0000000061 00000 n\n0000000112 00000 n\n0000000219 00000 n\n0000000331 00000 n\n0000000446 00000 n\n0000000650 00000 n\n0000000854 00000 n\n0000000922 00000 n\n0000001202 00000 n\n0000001267 00000 n\n0000004318 00000 n\ntrailer\n[<5b8fcc2742362b8b3f7a07371ad476df><5b8fcc2742362b8b3f7a07371ad476df>]\n% ReportLab generated PDF document -- digest (opensource)\n/Info 8 0 R\n/Root 7 0 R\n/Size 12\nstartxref\n5070\n%%EOF",
+      "sections": {
+        "contact": "%PDF-1.4",
+        "summary": "%     ReportLab Generated PDF document (opensource) 1 0 obj /F1 2 0 R /F2 3 0 R /F3 4 0 R",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git",
+          "REST APIs"
+        ],
+        "experience": [],
+        "education": []
+      },
+      "lastScore": 86
+    },
+    {
+      "id": "resume-demo-1",
+      "userId": "demo-user-1",
+      "fileName": "Alex_Morgan_Senior_Software_Engineer.pdf",
+      "fileSize": 142800,
+      "fileType": "application/pdf",
+      "uploadedAt": "2026-09-28T14:20:00Z",
+      "lastScore": 87,
+      "parsedText": "Alex Morgan\nSan Francisco, CA | alex.morgan@example.com | github.com/alexmorgan | linkedin.com/in/alexmorgan\n\nPROFESSIONAL SUMMARY\nSenior Backend Engineer with 5+ years of experience engineering high-throughput microservices, REST APIs, and distributed database systems. Adept in Python, FastAPI, PostgreSQL, Docker, and asynchronous architectures. Passionate about system latency reduction and automated deployment pipelines.\n\nTECHNICAL SKILLS\nLanguages: Python, TypeScript, SQL, Bash\nFrameworks & Libraries: FastAPI, Flask, SQLAlchemy, Pydantic, Express.js\nDatabases & Storage: PostgreSQL, Redis, SQLite, AWS S3\nDevOps & Cloud: Docker, Git, GitHub Actions, AWS (EC2, RDS), Linux\nCore Concepts: REST APIs, Asynchronous Programming, JWT Auth, Microservices, Unit Testing\n\nPROFESSIONAL EXPERIENCE\nSenior Backend Developer | CloudScale Inc. | 2024 – Present\n- Architected and deployed 6 core microservices using Python and FastAPI, handling 14,000+ requests per minute with an average p99 latency under 45ms.\n- Migrated legacy monolithic database queries to optimized PostgreSQL schemas with strategic b-tree and partial indexing, reducing slow query occurrences by 64%.\n- Integrated JWT authentication and role-based access control (RBAC) across public endpoints, safeguarding sensitive enterprise financial records.\n- Spearheaded adoption of Docker containerization across development workflows, eliminating local environment discrepancies and cutting onboarding time by 50%.\n\nSoftware Engineer | Apex Tech Solutions | 2021 – 2024\n- Developed REST API endpoints using Python and Flask for customer analytics dashboards serving 120,000 active monthly users.\n- Implemented asynchronous background jobs and caching layers using Redis, decreasing peak server load during end-of-quarter reporting by 38%.\n- Built automated test suites using pytest with 88% code coverage, catching regressions prior to production releases.\n- Collaborated closely with React frontend teams to define typed API contracts and OpenAPI specifications.\n\nEDUCATION\nBachelor of Science in Computer Science | University of California, Berkeley | 2017 – 2021\n\nPROJECTS\n- Real-Time Metric Aggregator: Open-source telemetry pipeline built with Python, FastAPI, and Redis stream processing, starring 420+ GitHub repositories.\n- Distributed Job Scheduler: Lightweight worker system handling fault-tolerant async execution with exponential backoff.",
+      "sections": {
+        "contact": "San Francisco, CA | alex.morgan@example.com",
+        "summary": "Senior Backend Engineer with 5+ years of experience engineering high-throughput microservices...",
+        "skills": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "Docker",
+          "AWS",
+          "Redis",
+          "SQL",
+          "REST APIs",
+          "Git",
+          "Linux"
+        ],
+        "experience": [
+          "Senior Backend Developer | CloudScale Inc. (2024-Present)",
+          "Software Engineer | Apex Tech Solutions (2021-2024)"
+        ],
+        "education": [
+          "B.S. in Computer Science, UC Berkeley (2021)"
+        ]
+      }
+    }
+  ],
+  "analyses": [
+    {
+      "id": "analysis-1790844622195",
+      "userId": "user-1790844589622",
+      "resumeId": "res-1790844622195",
+      "resumeFileName": "Alex_Rivera_Resume.pdf",
+      "jobTitle": "Senior Cloud Architect",
+      "jobDescription": "Senior Cloud Architect experienced in Python, PostgreSQL, AWS, and Distributed Microservices.",
+      "createdAt": "2026-10-01T08:50:22.195Z",
+      "atsScore": 85,
+      "jobMatchScore": 83,
+      "keywordScore": 82,
+      "skillScore": 84,
+      "scoreBreakdown": {
+        "atsCompatibility": {
+          "name": "ATS Compatibility",
+          "score": 85,
+          "explanation": "Single-column structure parses reliably with clear contact and standard chronological sections.",
+          "status": "excellent"
+        },
+        "contentQuality": {
+          "name": "Content Quality",
+          "score": 82,
+          "explanation": "Strong active language, but metrics could be more consistently quantified in earlier career roles.",
+          "status": "good"
+        },
+        "keywordOptimization": {
+          "name": "Keyword Optimization",
+          "score": 82,
+          "explanation": "Matches 2 core technical requirements found in the target job brief.",
+          "status": "good"
+        },
+        "formatting": {
+          "name": "Formatting & Layout",
+          "score": 92,
+          "explanation": "Clear typography hierarchy, consistent indentation, and clean section breaks.",
+          "status": "excellent"
+        },
+        "experienceRelevance": {
+          "name": "Experience Relevance",
+          "score": 83,
+          "explanation": "Past software engineering tenure directly transfers to target requirements and tech stack.",
+          "status": "good"
+        },
+        "skillsMatch": {
+          "name": "Skills Match",
+          "score": 84,
+          "explanation": "Covering 2 of 4 critical skills extracted from the posting.",
+          "status": "good"
+        }
+      },
+      "strengths": [
+        "Strong alignment in core stack requirements (Python, PostgreSQL).",
+        "Clear progression in technical responsibility and engineering scope across positions.",
+        "ATS-friendly single-column layout without tables or complex graphics.",
+        "Effective technical phrasing and terminology appropriate for engineering review."
+      ],
+      "areasToImprove": [
+        "Missing explicit mention of AWS, Microservices, which are emphasized in the job requirements.",
+        "Transform passive task descriptions into quantified business outcome bullets.",
+        "Highlight cross-functional collaboration and architectural decision-making.",
+        "Add dedicated metrics on performance gains, request volume, or cost optimization."
+      ],
+      "matchedSkills": [
+        "Python",
+        "PostgreSQL"
+      ],
+      "missingSkills": [
+        "AWS",
+        "Microservices"
+      ],
+      "recommendedSkills": [
+        "AWS",
+        "Microservices",
+        "Prometheus / Grafana",
+        "System Architecture"
+      ],
+      "keywords": {
+        "matched": [
+          "Python",
+          "PostgreSQL"
+        ],
+        "missing": [
+          "AWS",
+          "Microservices"
+        ],
+        "overused": [
+          "Responsible for",
+          "Helped with",
+          "Worked on"
+        ]
+      },
+      "recommendations": [
+        {
+          "id": "rec-1",
+          "category": "Keywords & ATS",
+          "problem": "Missing critical technical term 'AWS' requested in job requirements.",
+          "whyItMatters": "ATS keyword filters score resumes on exact terminology; missing this lowers match threshold.",
+          "currentBullet": "Managed cloud containerized environments and staging services.",
+          "suggestedImprovement": "Orchestrated microservices using Docker and AWS, improving staging cluster resource efficiency by 35%.",
+          "impactScore": "+6% ATS Score"
+        },
+        {
+          "id": "rec-2",
+          "category": "Impact & Metrics",
+          "problem": "Bullet points focus on duties rather than business or system performance outcomes.",
+          "whyItMatters": "Senior candidates are evaluated on measurable impact, latency reduction, and reliability.",
+          "currentBullet": "Wrote backend API services and handled database queries.",
+          "suggestedImprovement": "Architected asynchronous REST APIs in FastAPI and tuned PostgreSQL queries, cutting p99 response times by 48%.",
+          "impactScore": "+5% Job Match"
+        },
+        {
+          "id": "rec-3",
+          "category": "Experience Relevance",
+          "problem": "Deployment and automated testing pipelines are underspecified.",
+          "whyItMatters": "Employers want engineers who can independently ship and maintain production pipelines.",
+          "currentBullet": "Ran automated tests prior to deployments.",
+          "suggestedImprovement": "Engineered automated CI/CD pipelines with GitHub Actions and Pytest, boosting test coverage to 90% and slashing deployment time by 60%.",
+          "impactScore": "+4% Match Score"
+        },
+        {
+          "id": "rec-4",
+          "category": "Formatting & Structure",
+          "problem": "Overreliance on generic verbs like \"Worked on\" or \"Responsible for\".",
+          "whyItMatters": "Active, decisive verbs signal technical leadership and ownership to recruiters.",
+          "currentBullet": "Responsible for database maintenance and API bug fixes.",
+          "suggestedImprovement": "Spearheaded database schema refactoring and eliminated 40+ high-priority technical debt items.",
+          "impactScore": "+3% Quality"
+        }
+      ],
+      "executiveSummary": "The candidate profile exhibits a strong 83% job match for the role. Incorporating missing keywords (AWS, Microservices) and adding quantified metric outcomes to past projects will decisively place this resume in the top applicant tier."
+    },
+    {
+      "id": "analysis-1790844413838",
+      "userId": "demo-user-1",
+      "resumeId": "res-1790844413838",
+      "resumeFileName": "Megha_PE_Resume.docx",
+      "jobTitle": "Senior Backend Engineer",
+      "jobDescription": "Job Title: Senior Backend Engineer\nLocation: Remote / San Francisco, CA\nExperience: 4+ years\n\nAbout the Role:\nWe are seeking an experienced Senior Backend Engineer to architect, build, and optimize high-throughput distributed microservices. You will work closely with frontend engineers, AI researchers, and infrastructure teams to deliver resilient, sub-second API pipelines.\n\nKey Responsibilities:\n- Design, implement, and maintain high-performance asynchronous REST and GraphQL APIs using Python, FastAPI, and PostgreSQL.\n- Architect scalable background processing pipelines using Redis queues, Celery, and Docker containerized deployments.\n- Build resilient CI/CD pipelines (GitHub Actions) and deploy microservices on AWS (ECS, RDS, S3).\n- Implement enterprise-grade security, OAuth2/JWT authentication, rate limiting, and database query optimization.\n- Mentor junior engineers and conduct rigorous architectural code reviews.\n\nRequirements:\n- 4+ years of backend software engineering experience with Python and frameworks like FastAPI or Django.\n- Deep expertise in relational database design, indexing, and query tuning in PostgreSQL.\n- Solid understanding of Docker, container orchestration with Kubernetes, and modern cloud platforms (AWS/GCP).\n- Hands-on experience with asynchronous I/O, event-driven architectures, and caching systems (Redis).\n- Proven track record of shipping production features with automated test coverage and CI/CD.",
+      "createdAt": "2026-10-01T08:46:53.838Z",
+      "atsScore": 81,
+      "jobMatchScore": 78,
+      "keywordScore": 76,
+      "skillScore": 79,
+      "scoreBreakdown": {
+        "atsCompatibility": {
+          "name": "ATS Compatibility",
+          "score": 81,
+          "explanation": "Single-column structure parses reliably with clear contact and standard chronological sections.",
+          "status": "good"
+        },
+        "contentQuality": {
+          "name": "Content Quality",
+          "score": 78,
+          "explanation": "Strong active language, but metrics could be more consistently quantified in earlier career roles.",
+          "status": "good"
+        },
+        "keywordOptimization": {
+          "name": "Keyword Optimization",
+          "score": 76,
+          "explanation": "Matches 6 core technical requirements found in the target job brief.",
+          "status": "good"
+        },
+        "formatting": {
+          "name": "Formatting & Layout",
+          "score": 92,
+          "explanation": "Clear typography hierarchy, consistent indentation, and clean section breaks.",
+          "status": "excellent"
+        },
+        "experienceRelevance": {
+          "name": "Experience Relevance",
+          "score": 78,
+          "explanation": "Past software engineering tenure directly transfers to target requirements and tech stack.",
+          "status": "good"
+        },
+        "skillsMatch": {
+          "name": "Skills Match",
+          "score": 79,
+          "explanation": "Covering 6 of 20 critical skills extracted from the posting.",
+          "status": "good"
+        }
+      },
+      "strengths": [
+        "Strong alignment in core stack requirements (Python, PostgreSQL, Docker, REST APIs).",
+        "Clear progression in technical responsibility and engineering scope across positions.",
+        "ATS-friendly single-column layout without tables or complex graphics.",
+        "Effective technical phrasing and terminology appropriate for engineering review."
+      ],
+      "areasToImprove": [
+        "Missing explicit mention of Python, FastAPI, PostgreSQL, which are emphasized in the job requirements.",
+        "Transform passive task descriptions into quantified business outcome bullets.",
+        "Highlight cross-functional collaboration and architectural decision-making.",
+        "Add dedicated metrics on performance gains, request volume, or cost optimization."
+      ],
+      "matchedSkills": [
+        "Python",
+        "PostgreSQL",
+        "Docker",
+        "REST APIs",
+        "Git",
+        "Linux"
+      ],
+      "missingSkills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "AWS",
+        "GCP",
+        "GraphQL",
+        "Microservices",
+        "CI/CD",
+        "GitHub Actions",
+        "Celery",
+        "Django"
+      ],
+      "recommendedSkills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Prometheus / Grafana",
+        "System Architecture"
+      ],
+      "keywords": {
+        "matched": [
+          "Python",
+          "PostgreSQL",
+          "Docker",
+          "REST APIs",
+          "Git",
+          "Linux"
+        ],
+        "missing": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "Docker",
+          "Kubernetes"
+        ],
+        "overused": [
+          "Responsible for",
+          "Helped with",
+          "Worked on"
+        ]
+      },
+      "recommendations": [
+        {
+          "id": "rec-1",
+          "category": "Keywords & ATS",
+          "problem": "Missing critical technical term 'Python' requested in job requirements.",
+          "whyItMatters": "ATS keyword filters score resumes on exact terminology; missing this lowers match threshold.",
+          "currentBullet": "Managed cloud containerized environments and staging services.",
+          "suggestedImprovement": "Orchestrated microservices using Docker and Python, improving staging cluster resource efficiency by 35%.",
+          "impactScore": "+6% ATS Score"
+        },
+        {
+          "id": "rec-2",
+          "category": "Impact & Metrics",
+          "problem": "Bullet points focus on duties rather than business or system performance outcomes.",
+          "whyItMatters": "Senior candidates are evaluated on measurable impact, latency reduction, and reliability.",
+          "currentBullet": "Wrote backend API services and handled database queries.",
+          "suggestedImprovement": "Architected asynchronous REST APIs in FastAPI and tuned PostgreSQL queries, cutting p99 response times by 48%.",
+          "impactScore": "+5% Job Match"
+        },
+        {
+          "id": "rec-3",
+          "category": "Experience Relevance",
+          "problem": "Deployment and automated testing pipelines are underspecified.",
+          "whyItMatters": "Employers want engineers who can independently ship and maintain production pipelines.",
+          "currentBullet": "Ran automated tests prior to deployments.",
+          "suggestedImprovement": "Engineered automated CI/CD pipelines with GitHub Actions and Pytest, boosting test coverage to 90% and slashing deployment time by 60%.",
+          "impactScore": "+4% Match Score"
+        },
+        {
+          "id": "rec-4",
+          "category": "Formatting & Structure",
+          "problem": "Overreliance on generic verbs like \"Worked on\" or \"Responsible for\".",
+          "whyItMatters": "Active, decisive verbs signal technical leadership and ownership to recruiters.",
+          "currentBullet": "Responsible for database maintenance and API bug fixes.",
+          "suggestedImprovement": "Spearheaded database schema refactoring and eliminated 40+ high-priority technical debt items.",
+          "impactScore": "+3% Quality"
+        }
+      ],
+      "executiveSummary": "The candidate profile exhibits a strong 78% job match for the role. Incorporating missing keywords (Python, FastAPI) and adding quantified metric outcomes to past projects will decisively place this resume in the top applicant tier."
+    },
+    {
+      "id": "analysis-1790836040641",
+      "userId": "user-1790836009578",
+      "resumeId": "res-1790836040641",
+      "resumeFileName": "Yathin_BS_Resume_LTM.pdf",
+      "jobTitle": "AI / ML Platform Engineer",
+      "jobDescription": "Job Title: AI / ML Platform Engineer\nRequirements:\n- Strong programming in Python, PyTorch, and Hugging Face pipelines.\n- Experience with LLM orchestration (LangChain, LlamaIndex), Vector DBs (Pinecone, pgvector).\n- FastAPI backend serving with low latency inference endpoints.\n- Kubernetes, Docker, and AWS SageMaker/EKS experience.\n- Continuous evaluation pipelines, token usage tracking, and caching.",
+      "createdAt": "2026-10-01T06:27:20.641Z",
+      "atsScore": 86,
+      "jobMatchScore": 84,
+      "keywordScore": 83,
+      "skillScore": 85,
+      "scoreBreakdown": {
+        "atsCompatibility": {
+          "name": "ATS Compatibility",
+          "score": 86,
+          "explanation": "Single-column structure parses reliably with clear contact and standard chronological sections.",
+          "status": "excellent"
+        },
+        "contentQuality": {
+          "name": "Content Quality",
+          "score": 83,
+          "explanation": "Strong active language, but metrics could be more consistently quantified in earlier career roles.",
+          "status": "good"
+        },
+        "keywordOptimization": {
+          "name": "Keyword Optimization",
+          "score": 83,
+          "explanation": "Matches 6 core technical requirements found in the target job brief.",
+          "status": "good"
+        },
+        "formatting": {
+          "name": "Formatting & Layout",
+          "score": 92,
+          "explanation": "Clear typography hierarchy, consistent indentation, and clean section breaks.",
+          "status": "excellent"
+        },
+        "experienceRelevance": {
+          "name": "Experience Relevance",
+          "score": 84,
+          "explanation": "Past software engineering tenure directly transfers to target requirements and tech stack.",
+          "status": "good"
+        },
+        "skillsMatch": {
+          "name": "Skills Match",
+          "score": 85,
+          "explanation": "Covering 6 of 11 critical skills extracted from the posting.",
+          "status": "excellent"
+        }
+      },
+      "strengths": [
+        "Strong alignment in core stack requirements (Python, PostgreSQL, Docker, REST APIs).",
+        "Clear progression in technical responsibility and engineering scope across positions.",
+        "ATS-friendly single-column layout without tables or complex graphics.",
+        "Effective technical phrasing and terminology appropriate for engineering review."
+      ],
+      "areasToImprove": [
+        "Missing explicit mention of Python, FastAPI, Docker, which are emphasized in the job requirements.",
+        "Transform passive task descriptions into quantified business outcome bullets.",
+        "Highlight cross-functional collaboration and architectural decision-making.",
+        "Add dedicated metrics on performance gains, request volume, or cost optimization."
+      ],
+      "matchedSkills": [
+        "Python",
+        "PostgreSQL",
+        "Docker",
+        "REST APIs",
+        "Git",
+        "Linux"
+      ],
+      "missingSkills": [
+        "Python",
+        "FastAPI",
+        "Docker",
+        "Kubernetes",
+        "AWS"
+      ],
+      "recommendedSkills": [
+        "Python",
+        "FastAPI",
+        "Docker",
+        "Prometheus / Grafana",
+        "System Architecture"
+      ],
+      "keywords": {
+        "matched": [
+          "Python",
+          "PostgreSQL",
+          "Docker",
+          "REST APIs",
+          "Git",
+          "Linux"
+        ],
+        "missing": [
+          "Python",
+          "FastAPI",
+          "Docker",
+          "Kubernetes",
+          "AWS"
+        ],
+        "overused": [
+          "Responsible for",
+          "Helped with",
+          "Worked on"
+        ]
+      },
+      "recommendations": [
+        {
+          "id": "rec-1",
+          "category": "Keywords & ATS",
+          "problem": "Missing critical technical term 'Python' requested in job requirements.",
+          "whyItMatters": "ATS keyword filters score resumes on exact terminology; missing this lowers match threshold.",
+          "currentBullet": "Managed cloud containerized environments and staging services.",
+          "suggestedImprovement": "Orchestrated microservices using Docker and Python, improving staging cluster resource efficiency by 35%.",
+          "impactScore": "+6% ATS Score"
+        },
+        {
+          "id": "rec-2",
+          "category": "Impact & Metrics",
+          "problem": "Bullet points focus on duties rather than business or system performance outcomes.",
+          "whyItMatters": "Senior candidates are evaluated on measurable impact, latency reduction, and reliability.",
+          "currentBullet": "Wrote backend API services and handled database queries.",
+          "suggestedImprovement": "Architected asynchronous REST APIs in FastAPI and tuned PostgreSQL queries, cutting p99 response times by 48%.",
+          "impactScore": "+5% Job Match"
+        },
+        {
+          "id": "rec-3",
+          "category": "Experience Relevance",
+          "problem": "Deployment and automated testing pipelines are underspecified.",
+          "whyItMatters": "Employers want engineers who can independently ship and maintain production pipelines.",
+          "currentBullet": "Ran automated tests prior to deployments.",
+          "suggestedImprovement": "Engineered automated CI/CD pipelines with GitHub Actions and Pytest, boosting test coverage to 90% and slashing deployment time by 60%.",
+          "impactScore": "+4% Match Score"
+        },
+        {
+          "id": "rec-4",
+          "category": "Formatting & Structure",
+          "problem": "Overreliance on generic verbs like \"Worked on\" or \"Responsible for\".",
+          "whyItMatters": "Active, decisive verbs signal technical leadership and ownership to recruiters.",
+          "currentBullet": "Responsible for database maintenance and API bug fixes.",
+          "suggestedImprovement": "Spearheaded database schema refactoring and eliminated 40+ high-priority technical debt items.",
+          "impactScore": "+3% Quality"
+        }
+      ],
+      "executiveSummary": "The candidate profile exhibits a strong 84% job match for the role. Incorporating missing keywords (Python, FastAPI) and adding quantified metric outcomes to past projects will decisively place this resume in the top applicant tier."
+    },
+    {
+      "id": "analysis-demo-1",
+      "userId": "demo-user-1",
+      "resumeId": "resume-demo-1",
+      "resumeFileName": "Alex_Morgan_Senior_Software_Engineer.pdf",
+      "jobTitle": "Senior Backend Engineer (Python / FastAPI / Cloud)",
+      "jobDescription": "Job Title: Senior Backend Engineer\nLocation: Remote / San Francisco, CA\nExperience: 4+ years\n\nAbout the Role:\nWe are seeking an experienced Senior Backend Engineer to architect, build, and optimize high-throughput distributed microservices. You will work closely with frontend engineers, AI researchers, and infrastructure teams to deliver resilient, sub-second API pipelines.\n\nKey Responsibilities:\n- Design, implement, and maintain high-performance asynchronous REST and GraphQL APIs using Python, FastAPI, and PostgreSQL.\n- Architect scalable background processing pipelines using Redis queues, Celery, and Docker containerized deployments.\n- Build resilient CI/CD pipelines (GitHub Actions) and deploy microservices on AWS (ECS, RDS, S3).\n- Implement enterprise-grade security, OAuth2/JWT authentication, rate limiting, and database query optimization.\n- Mentor junior engineers and conduct rigorous architectural code reviews.\n\nRequirements:\n- 4+ years of backend software engineering experience with Python and frameworks like FastAPI or Django.\n- Deep expertise in relational database design, indexing, and query tuning in PostgreSQL.\n- Solid understanding of Docker, container orchestration with Kubernetes, and modern cloud platforms (AWS/GCP).\n- Hands-on experience with asynchronous I/O, event-driven architectures, and caching systems (Redis).\n- Proven track record of shipping production features with automated test coverage and CI/CD.",
+      "createdAt": "2026-09-28T14:25:00Z",
+      "atsScore": 87,
+      "jobMatchScore": 91,
+      "keywordScore": 84,
+      "skillScore": 86,
+      "isDemo": true,
+      "scoreBreakdown": {
+        "atsCompatibility": {
+          "name": "ATS Compatibility",
+          "score": 87,
+          "explanation": "Clean single-column structure, standard section headings, and searchable text without complex graphic tables.",
+          "status": "excellent"
+        },
+        "contentQuality": {
+          "name": "Content Quality",
+          "score": 82,
+          "explanation": "Solid engineering tone with strong action verbs. Several bullet points could feature more quantifiable business outcomes.",
+          "status": "good"
+        },
+        "keywordOptimization": {
+          "name": "Keyword Optimization",
+          "score": 91,
+          "explanation": "Exceptional density of core stack terms (FastAPI, Python, PostgreSQL, Docker) matching the employer requirements.",
+          "status": "excellent"
+        },
+        "formatting": {
+          "name": "Formatting & Layout",
+          "score": 90,
+          "explanation": "Consistent date formats, clear typography hierarchy, and standard margins conforming to ATS parser rules.",
+          "status": "excellent"
+        },
+        "experienceRelevance": {
+          "name": "Experience Relevance",
+          "score": 85,
+          "explanation": "Directly applicable backend engineering tenure at scale with clear progression in technical ownership.",
+          "status": "good"
+        },
+        "skillsMatch": {
+          "name": "Skills Match",
+          "score": 88,
+          "explanation": "Covers 18 out of 21 explicit tech and architecture requirements extracted from the target role.",
+          "status": "excellent"
+        }
+      },
+      "strengths": [
+        "Strong technical skill section directly aligning with modern Python & FastAPI backend stacks.",
+        "Clear measurable performance metrics (e.g. \"14,000+ requests per minute\", \"p99 latency under 45ms\").",
+        "High density of high-intent keywords naturally embedded in experience bullet points.",
+        "Standardized single-column layout ensuring seamless parsing by Workday, Greenhouse, and Lever."
+      ],
+      "areasToImprove": [
+        "Expand on Kubernetes container orchestration experience, which is explicitly highlighted in the job description.",
+        "Add specific CI/CD pipeline accomplishments (e.g. GitHub Actions deployment frequency or test automation runtimes).",
+        "Include mentoring or technical leadership examples to solidify Senior/Lead positioning.",
+        "Elaborate on data modeling trade-offs and query tuning methods in PostgreSQL."
+      ],
+      "matchedSkills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "REST APIs",
+        "Docker",
+        "AWS (EC2, RDS, S3)",
+        "Redis",
+        "Asynchronous I/O",
+        "JWT Authentication",
+        "SQLAlchemy",
+        "Git",
+        "Linux",
+        "Microservices",
+        "Unit Testing (pytest)",
+        "OpenAPI / Swagger",
+        "Query Optimization",
+        "System Design",
+        "Distributed Systems"
+      ],
+      "missingSkills": [
+        "Kubernetes",
+        "Celery",
+        "GraphQL"
+      ],
+      "recommendedSkills": [
+        "Kubernetes (EKS)",
+        "Celery / Task Queues",
+        "CI/CD Pipelines (GitHub Actions)",
+        "GraphQL Schema Design",
+        "Prometheus / Grafana Telemetry"
+      ],
+      "keywords": {
+        "matched": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "Docker",
+          "AWS",
+          "Redis",
+          "REST APIs",
+          "Microservices",
+          "Asynchronous",
+          "Authentication",
+          "JWT",
+          "Indexing"
+        ],
+        "missing": [
+          "Kubernetes",
+          "Celery",
+          "GraphQL",
+          "Container Orchestration"
+        ],
+        "overused": [
+          "Engineered",
+          "Developed"
+        ]
+      },
+      "recommendations": [
+        {
+          "id": "rec-1",
+          "category": "Keywords & ATS",
+          "problem": "Missing critical container orchestration keyword (Kubernetes) required by the target job description.",
+          "whyItMatters": "ATS parsers look for exact keyword parity for infrastructure requirements; missing Kubernetes lowers automatic ranking.",
+          "currentBullet": "Docker containerization across development workflows...",
+          "suggestedImprovement": "Containerized microservices with Docker and deployed reproducible staging environments using Kubernetes (Minikube / Helm), accelerating test velocity by 40%.",
+          "impactScore": "+6% ATS Score"
+        },
+        {
+          "id": "rec-2",
+          "category": "Impact & Metrics",
+          "problem": "Bullet point describes building REST API endpoints without highlighting performance or efficiency gains.",
+          "whyItMatters": "Senior-level engineering roles evaluate candidates on measurable system improvements rather than task completion.",
+          "currentBullet": "Developed REST API endpoints using Python and Flask for customer analytics dashboards serving 120,000 active monthly users.",
+          "suggestedImprovement": "Architected high-throughput REST API endpoints in Python/FastAPI that reduced analytical query processing time by 42% for 120,000+ monthly active users.",
+          "impactScore": "+5% Content Score"
+        },
+        {
+          "id": "rec-3",
+          "category": "Experience Relevance",
+          "problem": "Job posting emphasizes automated CI/CD pipelines, but the resume mentions testing without pipeline deployment specifics.",
+          "whyItMatters": "Demonstrating end-to-end delivery guarantees you can independently ship production code on day one.",
+          "currentBullet": "Built automated test suites using pytest with 88% code coverage, catching regressions prior to production releases.",
+          "suggestedImprovement": "Implemented automated CI/CD workflows using GitHub Actions and pytest (88% test coverage), reducing deployment pipeline duration from 25 to 7 minutes.",
+          "impactScore": "+4% Match Score"
+        },
+        {
+          "id": "rec-4",
+          "category": "Impact & Metrics",
+          "problem": "Database optimization is mentioned without specifying the technical mechanism used.",
+          "whyItMatters": "Staff and hiring managers look for concrete database indexing patterns (partial indexes, EXPLAIN ANALYZE) to verify seniority.",
+          "currentBullet": "Migrated legacy monolithic database queries to optimized PostgreSQL schemas with strategic b-tree and partial indexing...",
+          "suggestedImprovement": "Optimized mission-critical PostgreSQL schemas via composite indexing and query plan analysis, slashing slow transactions (>500ms) by 64% under peak load.",
+          "impactScore": "+3% Quality Score"
+        },
+        {
+          "id": "rec-5",
+          "category": "Formatting & Structure",
+          "problem": "Action verb repetition across consecutive positions (\"Developed\", \"Built\").",
+          "whyItMatters": "Varying strong technical verbs conveys broader initiative, technical leadership, and ownership.",
+          "currentBullet": "Developed REST API endpoints...",
+          "suggestedImprovement": "Engineered and scaled distributed REST endpoints...",
+          "impactScore": "+2% ATS Score"
+        },
+        {
+          "id": "rec-6",
+          "category": "Keywords & ATS",
+          "problem": "Target job specifies background workers (Celery/queues); current resume only mentions Redis caching.",
+          "whyItMatters": "Queue processing shows you understand asynchronous decoupling in modern backend platforms.",
+          "currentBullet": "Implemented asynchronous background jobs and caching layers using Redis...",
+          "suggestedImprovement": "Engineered distributed background task queues using Redis and Celery, offloading 4.5M monthly asynchronous report calculations from the primary HTTP thread.",
+          "impactScore": "+5% Job Match"
+        },
+        {
+          "id": "rec-7",
+          "category": "Experience Relevance",
+          "problem": "Missing mention of technical mentorship, a key responsibility in Senior Backend Engineer briefs.",
+          "whyItMatters": "Employers hiring for $150k+ roles look for force multipliers who lift team capabilities through code reviews and mentoring.",
+          "currentBullet": "Collaborated closely with React frontend teams to define typed API contracts...",
+          "suggestedImprovement": "Mentored 4 junior and mid-level engineers in distributed systems design, asynchronous Python practices, and rigorous code reviews.",
+          "impactScore": "+4% Leadership Score"
+        }
+      ],
+      "executiveSummary": "Alex’s resume is a remarkably strong candidate profile for the Senior Backend Engineer role with an overall 91% job match. The candidate possesses strong production pedigree in Python, FastAPI, PostgreSQL, and asynchronous backend architectures. Adding concrete mentions of Kubernetes orchestration and GitHub Actions CI/CD workflows, alongside framing bullet points around quantified performance metrics, will position Alex in the top 5% of applicant rankings."
+    }
+  ]
+}
